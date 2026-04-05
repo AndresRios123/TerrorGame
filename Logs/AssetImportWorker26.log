@@ -1,0 +1,1699 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Usuario" at "2026-04-05T23:35:26.4621666Z"
+Built from '6000.3/staging' branch; Version is '6000.3.11f1 (3000ef702840) revision 3145967'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'es' Physical Memory: 15752 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-04-05T23:35:26Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker26
+-projectPath
+C:/Users/Usuario/TerrorGame
+-logFile
+Logs/AssetImportWorker26.log
+-srvPort
+62731
+-licensingIpc
+LicenseClient-Usuario
+-job-worker-count
+7
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/Usuario/TerrorGame
+C:/Users/Usuario/TerrorGame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [31220]  Target information:
+
+Player connection [31220]  * "[IP] 192.168.0.19 [Port] 0 [Flags] 2 [Guid] 2006813856 [EditorId] 2006813856 [Version] 1048832 [Id] WindowsEditor(7,602SN11631) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [31220] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [31220] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 3.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.11f1 (3000ef702840)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Usuario/TerrorGame/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Graphics (ID=0x164c)
+    Vendor:   ATI
+    VRAM:     7876 MB
+    Driver:   31.0.21921.1000
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56612
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002514 seconds.
+- Loaded All Assemblies, in  0.574 seconds
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.0'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Usuario"
+[Licensing::IpcConnector] LicenseClient-Usuario channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Usuario-6000.3.11" at "2026-04-05T23:35:27.77305Z"
+Native extension for WindowsStandalone target not found
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.0+23225a6
+  Session Id:              e9fcc224d9fd4f0391e4d75010e039db
+  Correlation Id:          be96ad86f2844d08650a9d67f96dace9
+  External correlation Id: 135805052944997079
+  Machine Id:              54h4dYrsuYdpihKd6oGvI+sRZnU=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Usuario-6000.3.11" (connect: 0.00s, validation: 0.00s, handshake: 0.14s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Usuario-6000.3.11-notifications" at "2026-04-05T23:35:27.9106654Z"
+[Licensing::Module] Licensing Background thread has ended after 1.45s
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.519 seconds
+Domain Reload Profiling: 1091ms
+	BeginReloadAssembly (171ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (267ms)
+		LoadAssemblies (167ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (263ms)
+			TypeCache.Refresh (261ms)
+				TypeCache.ScanAssembly (244ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (520ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (456ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (63ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (114ms)
+			ProcessInitializeOnLoadAttributes (178ms)
+			ProcessInitializeOnLoadMethodAttributes (94ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 4674176816030-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.122 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-TerrorGame
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.888 seconds
+Domain Reload Profiling: 2005ms
+	BeginReloadAssembly (267ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (56ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (723ms)
+		LoadAssemblies (516ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (338ms)
+			TypeCache.Refresh (251ms)
+				TypeCache.ScanAssembly (230ms)
+			BuildScriptInfoCaches (71ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (888ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (669ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (151ms)
+			ProcessInitializeOnLoadAttributes (394ms)
+			ProcessInitializeOnLoadMethodAttributes (112ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 30 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6829 unused Assets / (7.8 MB). Loaded Objects now: 7665.
+Memory consumption went from 188.2 MB to 180.4 MB.
+Total: 12.812900 ms (FindLiveObjects: 1.106700 ms CreateObjectMapping: 1.074200 ms MarkObjects: 6.633800 ms  DeleteObjects: 3.995900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 27454.157534 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03
+  artifactKey: Guid(197c578b8563e4739a4828d7a5a0021b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03 using Guid(197c578b8563e4739a4828d7a5a0021b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '58db4c3f89ddf8d3c277251fdc258e8f') in 0.0799865 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeCabinet02.prefab
+  artifactKey: Guid(6efee525fdecf4cf3b59d6b733cc2609) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeCabinet02.prefab using Guid(6efee525fdecf4cf3b59d6b733cc2609) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a2f75a8cd2db27ba5b714c9f3d4de9be') in 0.1320992 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Materials/Version01/FreeRoomMaterial.mat
+  artifactKey: Guid(7a2e60135d3a74f4a89b5224b4010f7a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Materials/Version01/FreeRoomMaterial.mat using Guid(7a2e60135d3a74f4a89b5224b4010f7a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '89e7977d423d54f9f199d6c1f6765684') in 0.045031 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCup02.prefab
+  artifactKey: Guid(1c18ad21c7ffe42d0ac6bd53d86cf4ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCup02.prefab using Guid(1c18ad21c7ffe42d0ac6bd53d86cf4ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0d2b5e93de39fd7ba2b577e8e5aa359e') in 0.0342535 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Models/FreeExtractorHood.fbx
+  artifactKey: Guid(673d5702877994d0493b648ed35b6326) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Models/FreeExtractorHood.fbx using Guid(673d5702877994d0493b648ed35b6326) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e6b986e0e901f5ca6eaaf5209b2c49a2') in 0.0584222 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeEquipment02Material_Normal.png
+  artifactKey: Guid(fd65fe268bac04161a1e61071b803867) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeEquipment02Material_Normal.png using Guid(fd65fe268bac04161a1e61071b803867) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '35bc566f742830081f4884b578ddafd3') in 0.0871255 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeEquipment02Material_AO.png
+  artifactKey: Guid(b2731a048ea3544959cf2dad5171c4fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeEquipment02Material_AO.png using Guid(b2731a048ea3544959cf2dad5171c4fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a31ec277f0d6409defbb97984b02c8c1') in 0.023526 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/ShelfWithEquipment01.prefab
+  artifactKey: Guid(6d051c01ff762464b87361c24e20a879) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/ShelfWithEquipment01.prefab using Guid(6d051c01ff762464b87361c24e20a879) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5fe58211be89de75954b8f8d532ea6b2') in 0.0350298 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 108
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Materials/Version02/FreeEquipment02Material.mat
+  artifactKey: Guid(81a54a90af171413c8effdcf95c3d419) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Materials/Version02/FreeEquipment02Material.mat using Guid(81a54a90af171413c8effdcf95c3d419) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '27105ffa270ad8d7ae8c9f8ac1833d64') in 0.0389936 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Models/FreeCabinet01_DoorRight.fbx
+  artifactKey: Guid(9539b6d6956c84ce9aa440302716cc1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Models/FreeCabinet01_DoorRight.fbx using Guid(9539b6d6956c84ce9aa440302716cc1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8599f3f9f69b4ab4cc95c9212a780717') in 0.0248044 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreePotSmall.prefab
+  artifactKey: Guid(6f89576732e5744ae89cf5fea5d03780) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreePotSmall.prefab using Guid(6f89576732e5744ae89cf5fea5d03780) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '31e75c4c9ee984b24e2cc857e502b8e8') in 0.0247696 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Materials/Version01/FreeRoomAccessoriesMaterial.mat
+  artifactKey: Guid(7ae051337c686434d998a8245e1536a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Materials/Version01/FreeRoomAccessoriesMaterial.mat using Guid(7ae051337c686434d998a8245e1536a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'addfe2e71fe0068f044d5db6dc759378') in 0.0200108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeRoomMaterial_AlbedoTransparency.png
+  artifactKey: Guid(909381d490e6347a293208dbf4494264) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeRoomMaterial_AlbedoTransparency.png using Guid(909381d490e6347a293208dbf4494264) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3454e5fee0205c8962e171c7dc9b96fd') in 0.0232745 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeStoveMaterial_AlbedoTransparency.png
+  artifactKey: Guid(8d78cad69ec374186892f3aa33e8fc4c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeStoveMaterial_AlbedoTransparency.png using Guid(8d78cad69ec374186892f3aa33e8fc4c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7e6fc2dc25802d3139e1a7d6ff7ad8b2') in 0.0248011 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/ShelfWithEquipment02.prefab
+  artifactKey: Guid(7df9f3f2c0d604965971dc955ee37030) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/ShelfWithEquipment02.prefab using Guid(7df9f3f2c0d604965971dc955ee37030) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd98d7bb28a5b68d4e39fe0f96fdd5ace') in 0.0307405 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 39
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeCabinet03_Material_AO.png
+  artifactKey: Guid(31fe44a10d17641a98534457ea9a4fd7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeCabinet03_Material_AO.png using Guid(31fe44a10d17641a98534457ea9a4fd7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '535c0192e8ea865f89b6bfe1a8da5727') in 0.0251019 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeBowl01.prefab
+  artifactKey: Guid(af2b0398b8d9140eb98924b1b6772b81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeBowl01.prefab using Guid(af2b0398b8d9140eb98924b1b6772b81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '64a4a76c778225b402a426ce84daf314') in 0.0392349 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeCabinet01_Material_AlbedoTransparency.png
+  artifactKey: Guid(6a3c2d68fa6c94f53801bf8c9a52b1e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeCabinet01_Material_AlbedoTransparency.png using Guid(6a3c2d68fa6c94f53801bf8c9a52b1e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd74754d284f6aebaa7cafb2fc3c20dcd') in 0.0228334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeSaltShaker.prefab
+  artifactKey: Guid(ab8f00381e0414a4cbbe04bcfc5e165b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeSaltShaker.prefab using Guid(ab8f00381e0414a4cbbe04bcfc5e165b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '528e6ecb22780ef1d26779f04f560ac1') in 0.0251446 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeRefrigerator.prefab
+  artifactKey: Guid(8d5e9548b0e8c40808e15b9393d08ade) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeRefrigerator.prefab using Guid(8d5e9548b0e8c40808e15b9393d08ade) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ca53e137beb84fdeb424551280b10e0d') in 0.0147376 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeCabinet03_Material_AO.png
+  artifactKey: Guid(c65b3236a85ef48ca9847da8ca8c3867) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeCabinet03_Material_AO.png using Guid(c65b3236a85ef48ca9847da8ca8c3867) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '35d50bf7e6e4b5c11127c4d27ad28aca') in 0.0227158 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeCabinet01.prefab
+  artifactKey: Guid(d449a4154505d4b9aacfd3fd4b49b299) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeCabinet01.prefab using Guid(d449a4154505d4b9aacfd3fd4b49b299) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8c3623ef02df1962a1ebaca84109e38b') in 0.020154 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/ShelfWithEquipment02.prefab
+  artifactKey: Guid(6617f31a484b648878d478db800ec3ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/ShelfWithEquipment02.prefab using Guid(6617f31a484b648878d478db800ec3ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ff64399345d8777c19b86824ca7e9f15') in 0.0186761 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 39
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeRoomMaterial_MetallicSmoothness.png
+  artifactKey: Guid(e17e025944f1a4b439565f6db807e8bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeRoomMaterial_MetallicSmoothness.png using Guid(e17e025944f1a4b439565f6db807e8bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b2469a7703605412b9504c174af6b29c') in 0.0226695 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeRefrigerator.prefab
+  artifactKey: Guid(c666c7257fe3046859d7986a4dd9700c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeRefrigerator.prefab using Guid(c666c7257fe3046859d7986a4dd9700c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '312cf2356904bff711a5919b602d7c32') in 0.0252901 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeSaltShaker.prefab
+  artifactKey: Guid(7f496ac96f3ab4b058545abc0cfec9ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeSaltShaker.prefab using Guid(7f496ac96f3ab4b058545abc0cfec9ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab790b21ac73da038a797f0b9359f83a') in 0.0313009 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeEquipment01Material_MetallicSmoothness.png
+  artifactKey: Guid(4462e8b2fac084332918bd30457374cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeEquipment01Material_MetallicSmoothness.png using Guid(4462e8b2fac084332918bd30457374cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c118c3e74aaee6d0cbdb2f385eeccf25') in 0.0221805 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeRoomMaterial_AO.png
+  artifactKey: Guid(1834e6662901e42469c39207c8f02b6f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeRoomMaterial_AO.png using Guid(1834e6662901e42469c39207c8f02b6f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e9633fa061b63610d42d9c0ea19a0385') in 0.0217779 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCabinet02_DrawerSmall.prefab
+  artifactKey: Guid(5d260932f991f4f21b954ee93ac7aa03) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCabinet02_DrawerSmall.prefab using Guid(5d260932f991f4f21b954ee93ac7aa03) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f889b7c8bdfae91f9f232744178f2cd4') in 0.0273222 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Models/FreeCabinet01_DoorLeft.fbx
+  artifactKey: Guid(665d38aa7cbdb44158a5b4b71567bb13) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Models/FreeCabinet01_DoorLeft.fbx using Guid(665d38aa7cbdb44158a5b4b71567bb13) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a9b27a26575a50a584af6b614225ffae') in 0.0210177 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeRoomAccessoriesMaterial_AlbedoTransparency.png
+  artifactKey: Guid(100ea48a9bd2a444691de76ddabb0127) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeRoomAccessoriesMaterial_AlbedoTransparency.png using Guid(100ea48a9bd2a444691de76ddabb0127) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7dfa5e58c1852e8796398377aef68966') in 0.0227979 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeStoveMaterial_Normal.png
+  artifactKey: Guid(451dee1bb4e9e41c592c0ec76f342c01) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeStoveMaterial_Normal.png using Guid(451dee1bb4e9e41c592c0ec76f342c01) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8b8c87f5e2bba62d234dedb7a6a86200') in 0.0255591 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeChair.prefab
+  artifactKey: Guid(fd97ab50fe8954dbdad1b63fe7179412) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeChair.prefab using Guid(fd97ab50fe8954dbdad1b63fe7179412) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '74902e2cb839b3447a3ad5d3151ac34a') in 0.034847 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeSpatula02.prefab
+  artifactKey: Guid(c5d95c401ebb6498abb86c916d32dc5b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeSpatula02.prefab using Guid(c5d95c401ebb6498abb86c916d32dc5b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8a338f96a810cbf0e0ac5a2bf293cd09') in 0.0284911 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Models/FreeCabinet02_DrawerSmall.fbx
+  artifactKey: Guid(ac039d90cb5844685919504da1ddf727) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Models/FreeCabinet02_DrawerSmall.fbx using Guid(ac039d90cb5844685919504da1ddf727) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fb26610ac7db5d926300e59165e05686') in 0.0265613 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeCabinet01_Material_MetallicSmoothness.png
+  artifactKey: Guid(7ca3294d967994b4188cac5f17399c53) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeCabinet01_Material_MetallicSmoothness.png using Guid(7ca3294d967994b4188cac5f17399c53) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'adc5c7f1a2cc97c64e305704ebe7c9b4') in 0.0269626 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeSaltShaker.prefab
+  artifactKey: Guid(4416b98c4484848b393bc467ca0845bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeSaltShaker.prefab using Guid(4416b98c4484848b393bc467ca0845bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '32a0e1b5e44a9d221e77a0ba8804913c') in 0.032121 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeCabinet01_DoorRight.prefab
+  artifactKey: Guid(8db0836c2768d4672b6a6a5769326053) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeCabinet01_DoorRight.prefab using Guid(8db0836c2768d4672b6a6a5769326053) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd06d4ee36bcfda6bd34098f157391977') in 0.0246892 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Materials/Version01/FreeEquipment01Material.mat
+  artifactKey: Guid(1ca37e518845d4048973baf39f8666c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Materials/Version01/FreeEquipment01Material.mat using Guid(1ca37e518845d4048973baf39f8666c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ce5a9ab8d2522d1ceededb95a01d0f14') in 0.0207635 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeStoveMaterial_Normal.png
+  artifactKey: Guid(b94ab2f4b0fa44aa2b692a8e4882ee3c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeStoveMaterial_Normal.png using Guid(b94ab2f4b0fa44aa2b692a8e4882ee3c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9efa02c55d46d6dc29e69e779b1e1288') in 0.0239041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Models/FreeMirkowave.fbx
+  artifactKey: Guid(b8ebfe305189541c599cfac2c3f6ee68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Models/FreeMirkowave.fbx using Guid(b8ebfe305189541c599cfac2c3f6ee68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '89786a50355d95badc00c46286c9cc79') in 0.0240268 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeBowl02.prefab
+  artifactKey: Guid(e0cd751eb70ae4bf8bdf7f8885891659) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeBowl02.prefab using Guid(e0cd751eb70ae4bf8bdf7f8885891659) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0458affdeeb5c10cb1ba34f4fbdaea90') in 0.0319036 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeCabinet03_Material_AlbedoTransparency.png
+  artifactKey: Guid(6f77676ef48754379ab559bafc0f3335) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeCabinet03_Material_AlbedoTransparency.png using Guid(6f77676ef48754379ab559bafc0f3335) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '542af145ca2b5ff573c0a093dc36a71e') in 0.0228375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeExtractorHood.prefab
+  artifactKey: Guid(c7e29f9db90054909a07a4b7127fc57d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeExtractorHood.prefab using Guid(c7e29f9db90054909a07a4b7127fc57d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '05414b74163f7d8977b251c4862904ed') in 0.0213423 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeRoomMaterial_AO.png
+  artifactKey: Guid(5d32d84ab767c4946bb64549708ea296) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeRoomMaterial_AO.png using Guid(5d32d84ab767c4946bb64549708ea296) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1722236b0c932a6824685c7017c0cbe5') in 0.0217775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Models/FreeSpatula02.fbx
+  artifactKey: Guid(a247d2de4e8ff417bb4477b110339452) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Models/FreeSpatula02.fbx using Guid(a247d2de4e8ff417bb4477b110339452) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c665479a16f10e3ffecff0ea77a1c715') in 0.0268123 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeRoomMaterial_AlbedoTransparency.png
+  artifactKey: Guid(4a5239ec5a6ac4cdda3e6ebecffa4190) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeRoomMaterial_AlbedoTransparency.png using Guid(4a5239ec5a6ac4cdda3e6ebecffa4190) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6c256035a3afb1d906d5acb3d3d48593') in 0.0246814 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeExtractorHood.prefab
+  artifactKey: Guid(b5e6f6df147d44b2f8ceb51de1247009) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeExtractorHood.prefab using Guid(b5e6f6df147d44b2f8ceb51de1247009) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0abcd9558c914cc7e222bda4f50a3911') in 0.0307589 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/StoveWithExtractorHood.prefab
+  artifactKey: Guid(648853ee3e2944b0d83d3420dbb52fa0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/StoveWithExtractorHood.prefab using Guid(648853ee3e2944b0d83d3420dbb52fa0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '64533ed6e6774dec7b692536eba8a2ac') in 0.026762 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Materials/Version03/FreeEquipment01Material.mat
+  artifactKey: Guid(4553dafe61eba484d8b5b2880ce048ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Materials/Version03/FreeEquipment01Material.mat using Guid(4553dafe61eba484d8b5b2880ce048ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ccc4398f8181547a808c619d5e5ad71e') in 0.0309555 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeLampPart.prefab
+  artifactKey: Guid(7f3144fefa636410f994e2c11cca9746) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeLampPart.prefab using Guid(7f3144fefa636410f994e2c11cca9746) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '008dc82cb1f1eca1cf85cccb11b232ad') in 0.0274847 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeVase.prefab
+  artifactKey: Guid(c8fbde3cd96d6478585af9ba54a74908) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeVase.prefab using Guid(c8fbde3cd96d6478585af9ba54a74908) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0321c77ac6056a115ecb8661429e039f') in 0.0447625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Materials/Version03/FreeCabinet01_Material.mat
+  artifactKey: Guid(e4a2341c7f21f4cd081610ac142acf4a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Materials/Version03/FreeCabinet01_Material.mat using Guid(e4a2341c7f21f4cd081610ac142acf4a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b046fc810eb07183b5be9fd47618f52c') in 0.028044 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/Cabinet02WithEquipment.prefab
+  artifactKey: Guid(d893035dcedac4979a71576df53f9dd8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/Cabinet02WithEquipment.prefab using Guid(d893035dcedac4979a71576df53f9dd8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '43784642db9f60320d4ac451acefc20c') in 0.023061 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 121
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Models/FreeCarpet.fbx
+  artifactKey: Guid(4dfa891e474b549bbb7e88914a5713e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Models/FreeCarpet.fbx using Guid(4dfa891e474b549bbb7e88914a5713e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '14038a9a7c671f29dfcef6bec164ddf8') in 0.0250658 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeLampPart.prefab
+  artifactKey: Guid(718fddb8ad2c843218bcc12cbfac939c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeLampPart.prefab using Guid(718fddb8ad2c843218bcc12cbfac939c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f654fe30e583c2cbce878cdb0162bed5') in 0.0291381 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/Cabinet01WithEquipment.prefab
+  artifactKey: Guid(7734db661ffff4dc9ab2fb743c270b77) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/Cabinet01WithEquipment.prefab using Guid(7734db661ffff4dc9ab2fb743c270b77) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c5d7d7d6539e0b1b79eb001d3d947cd0') in 0.1836322 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 66
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeRoomMaterial_Normal.png
+  artifactKey: Guid(e12e1d2528a934b22a4f966e08ba18d7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeRoomMaterial_Normal.png using Guid(e12e1d2528a934b22a4f966e08ba18d7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '60e1dbc739378461d86817defab8ee11') in 0.0223787 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.666578 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeBowl01.prefab
+  artifactKey: Guid(f9b46880c7d52469a8c1b79e124a0b45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeBowl01.prefab using Guid(f9b46880c7d52469a8c1b79e124a0b45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8fcf0c8be1871489267442898bef7da9') in 0.0237994 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeCabinet02_Material_MetallicSmoothness.png
+  artifactKey: Guid(ebb8e9d46409041209950b576c94c2a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeCabinet02_Material_MetallicSmoothness.png using Guid(ebb8e9d46409041209950b576c94c2a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a85000f05e597d5b9a6858391f221fc9') in 0.021118 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreePlate.prefab
+  artifactKey: Guid(177c52344eee54631af8ac52503d1ea3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreePlate.prefab using Guid(177c52344eee54631af8ac52503d1ea3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dec0e37ea8d349e36324f0ba9337e992') in 0.0282744 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.268093 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Materials/Version02/FreeEquipment01Material.mat
+  artifactKey: Guid(ac6d1fe568221425d8fae9b5fd370e7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Materials/Version02/FreeEquipment01Material.mat using Guid(ac6d1fe568221425d8fae9b5fd370e7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4151d80b05115a8ae1b335fd79655f87') in 0.0292642 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.926723 seconds.
+  path: Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreePotBig.prefab
+  artifactKey: Guid(044f3c58650d74108a9ac96a17e43fc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreePotBig.prefab using Guid(044f3c58650d74108a9ac96a17e43fc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c7795620d41c8902a20880cd2ec83993') in 0.0291535 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.527859 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeStoveMaterial_AO.png
+  artifactKey: Guid(a215afb99e173421d820c770e2326018) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeStoveMaterial_AO.png using Guid(a215afb99e173421d820c770e2326018) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4b1417c5b29e5a2b9c8b427dc6bc0bc0') in 0.0248176 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.415930 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeCabinet02_DrawerSmall.prefab
+  artifactKey: Guid(01c1649a861864384aa164a54d5e22f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeCabinet02_DrawerSmall.prefab using Guid(01c1649a861864384aa164a54d5e22f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '78a8761d09f5c170f2e35b7c2460a3ac') in 0.0302607 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.526891 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeCabinet02_Material_AlbedoTransparency.png
+  artifactKey: Guid(16d7b3ccc7cf941ae81fb4f9f6d05cc7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeCabinet02_Material_AlbedoTransparency.png using Guid(16d7b3ccc7cf941ae81fb4f9f6d05cc7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c286e7ee1b1b52ed99bb945773815d0f') in 0.0209517 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.418836 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Materials/Version02/FreeRoomMaterial.mat
+  artifactKey: Guid(1ecfd7bd6bb384807bb0dbb3ad27b1e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Materials/Version02/FreeRoomMaterial.mat using Guid(1ecfd7bd6bb384807bb0dbb3ad27b1e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '94d2fbc8469c7e8b5b10f7ef69195d94') in 0.0335695 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Materials/Version02/FreeCabinet02_Material.mat
+  artifactKey: Guid(f975158e276ca49338d3c61c29e25cb3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Materials/Version02/FreeCabinet02_Material.mat using Guid(f975158e276ca49338d3c61c29e25cb3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7c9cda76534de41d2103c91452e6190d') in 0.0297147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.412982 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeRefrigeratorMaterial_Normal.png
+  artifactKey: Guid(479c0f0f0186a42d0bd3aa0ca050e741) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeRefrigeratorMaterial_Normal.png using Guid(479c0f0f0186a42d0bd3aa0ca050e741) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'afcc77b1fa82fa76ac2c09af51515978') in 0.0246047 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.444362 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreePotBig.prefab
+  artifactKey: Guid(044f3c58650d74108a9ac96a17e43fc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreePotBig.prefab using Guid(044f3c58650d74108a9ac96a17e43fc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7eeb45e7fade5750554e75e28f8a8223') in 0.0207001 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreePlate.prefab
+  artifactKey: Guid(bf93e4f85312c47809f52b78bde0ff28) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreePlate.prefab using Guid(bf93e4f85312c47809f52b78bde0ff28) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '33eb2a7b9d609ba44821e91eb37fda1a') in 0.0225608 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.736705 seconds.
+  path: Assets/Assets/Andres/01_AssetStore/DoorPackFree
+  artifactKey: Guid(a4141779e4e314146b71b6ed147f3852) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/01_AssetStore/DoorPackFree using Guid(a4141779e4e314146b71b6ed147f3852) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9921b4fe35bbb12e75f388e2ef6b09fe') in 0.0164553 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Assets/Andres/01_AssetStore/DoorPackFree/Meshes/Door001/V6/Aferar_13 - Default_SpecularSmoothness.png
+  artifactKey: Guid(e2d2f6fd919564b42bdfb8258f8f800d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/01_AssetStore/DoorPackFree/Meshes/Door001/V6/Aferar_13 - Default_SpecularSmoothness.png using Guid(e2d2f6fd919564b42bdfb8258f8f800d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e6a2a938b85179a6d5e2db78bd2541f2') in 0.0331841 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.343245 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models
+  artifactKey: Guid(7c5972f4d9ce3f94dbedd6953dab5cad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models using Guid(7c5972f4d9ce3f94dbedd6953dab5cad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ba1269efb22a6f40de26541733dd8882') in 0.0148851 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Settings/SampleSceneProfile.asset
+  artifactKey: Guid(a6560a915ef98420e9faacc1c7438823) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Settings/SampleSceneProfile.asset using Guid(a6560a915ef98420e9faacc1c7438823) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4db9698b1667bce61ac3ff5440a8f5bb') in 0.0263846 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/LightCeliing.FBX
+  artifactKey: Guid(9c43f81752aff054389b01879860d47b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/LightCeliing.FBX using Guid(9c43f81752aff054389b01879860d47b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '35ae5a5f5791f4cbc5629569cb969797') in 0.0258686 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Materials/WoodPlanksBrown.mat
+  artifactKey: Guid(d5099de0a4714c64ca1a0e843c638fc1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Materials/WoodPlanksBrown.mat using Guid(d5099de0a4714c64ca1a0e843c638fc1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8a17f1cd8433b6d9245250e42de8b3d8') in 0.0368519 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Walls/WallWindowTall4m.prefab
+  artifactKey: Guid(e79ec92704f45584dbb6e0e569b69d8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Walls/WallWindowTall4m.prefab using Guid(e79ec92704f45584dbb6e0e569b69d8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8dd96aadf7e0b798476cd938667c7f0d') in 0.0332991 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Walls
+  artifactKey: Guid(cefdb150a71df7048a21ef8267db612c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Walls using Guid(cefdb150a71df7048a21ef8267db612c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9bd0a7039cbb30f7ea18c25d25d60fd0') in 0.0153214 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Textures/StripesGreen.jpg
+  artifactKey: Guid(ccf9b3b0a017b424bb283a6622b34cf4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Textures/StripesGreen.jpg using Guid(ccf9b3b0a017b424bb283a6622b34cf4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a6798ad270bd7d449f12fa4886e7cb6f') in 0.0378522 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/LightBulb.FBX
+  artifactKey: Guid(e47fe05927092224492a466c2d5b61c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/LightBulb.FBX using Guid(e47fe05927092224492a466c2d5b61c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7efc5c1f0c8659ba537858826d33d4a6') in 0.0293279 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Textures/SpotsGreenLight.jpg
+  artifactKey: Guid(ab677bf6e415a434dbba0d65103b836a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Textures/SpotsGreenLight.jpg using Guid(ab677bf6e415a434dbba0d65103b836a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '222c0c36540caf7272acdf19c0aaddf1') in 0.0237649 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Floor/RugDoorMat.prefab
+  artifactKey: Guid(00d62ec9ef1fe7a4b9a60fe6f8a43b44) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Floor/RugDoorMat.prefab using Guid(00d62ec9ef1fe7a4b9a60fe6f8a43b44) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1ec378c8c28ccef4556b39c2cd905762') in 0.03568 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Walls/WallCornerInner.FBX
+  artifactKey: Guid(f63deedad9c61c54a975dc8c4b495ab9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Walls/WallCornerInner.FBX using Guid(f63deedad9c61c54a975dc8c4b495ab9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0700c89800341b4b392d812ecdadcd23') in 0.0416658 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Settings
+  artifactKey: Guid(f2f5c7ec5dd0a439a98c159973c28c49) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Settings using Guid(f2f5c7ec5dd0a439a98c159973c28c49) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8d857c0be7b234335441fa334888671b') in 0.0170329 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Materials/TrimSheetBlues.mat
+  artifactKey: Guid(e4fdbc2bd3766404e99488c6115482f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Materials/TrimSheetBlues.mat using Guid(e4fdbc2bd3766404e99488c6115482f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '84a6a1b7cc13632164266ad3b2319451') in 0.0331108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Floor/RugRectangleSmall.FBX
+  artifactKey: Guid(5dda221b1c394884b922c54ab63015a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Floor/RugRectangleSmall.FBX using Guid(5dda221b1c394884b922c54ab63015a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '13cb62f57e186f93c0a3400780c64665') in 0.0231997 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Walls/Wall1m.FBX
+  artifactKey: Guid(fb137926826512b48b40c74b03f914ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Walls/Wall1m.FBX using Guid(fb137926826512b48b40c74b03f914ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '91388a57ed8bb4c3ac166fa142e0d3b7') in 0.0260133 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/VaseTall.FBX
+  artifactKey: Guid(5d0bee9200f22e5408e8aae6a2eba395) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/VaseTall.FBX using Guid(5d0bee9200f22e5408e8aae6a2eba395) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3b145300c935bc843c28e1d95305cb01') in 0.0290799 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Materials/PatternSpotGreenBig.mat
+  artifactKey: Guid(11ec10ab08ff11a40a2ed07f256a01a5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Materials/PatternSpotGreenBig.mat using Guid(11ec10ab08ff11a40a2ed07f256a01a5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4cbdce1fce720f9577cb9ab9a1276d7d') in 0.0258764 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Materials/WallsBlue.mat
+  artifactKey: Guid(9eaf7873583253a4eb7f91ae48b41745) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Materials/WallsBlue.mat using Guid(9eaf7873583253a4eb7f91ae48b41745) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cac1fc6052c13f230c241e3d8838d5d8') in 0.037214 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Walls/Wall2m.prefab
+  artifactKey: Guid(c28f78ec568fdde469c5319409c09d3c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Walls/Wall2m.prefab using Guid(c28f78ec568fdde469c5319409c09d3c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '002b973b6ebd88880b5f07ec4980248f') in 0.033934 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Walls/Wall3m.FBX
+  artifactKey: Guid(63e6069ebe726454ab160677d1ad79ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Walls/Wall3m.FBX using Guid(63e6069ebe726454ab160677d1ad79ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3ae144b808c14b06eb94a91733113bef') in 0.0290547 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Materials/PatternStripeGreenLime.mat
+  artifactKey: Guid(f1dac06e1bdc8fb498863f3e14bc35bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Materials/PatternStripeGreenLime.mat using Guid(f1dac06e1bdc8fb498863f3e14bc35bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dc86b9776aa58b6dc2d9dfa09e83fc35') in 0.020283 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Lights/LampTall.prefab
+  artifactKey: Guid(ebc13ed40311b184c98364ffba271c6c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Lights/LampTall.prefab using Guid(ebc13ed40311b184c98364ffba271c6c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1cc84b91b2a482e507348a77fcb588ac') in 0.0307298 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Materials/Floor_WoodPlanks.mat
+  artifactKey: Guid(d7d2140b20cc3b14fb613d90837f5512) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Materials/Floor_WoodPlanks.mat using Guid(d7d2140b20cc3b14fb613d90837f5512) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fb6c19243bb551f1ed4273a6c7c63d02') in 0.0216948 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Floor/Floor4m.prefab
+  artifactKey: Guid(80e5bbfa6aa12b34ca98423c9e7a0f86) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Floor/Floor4m.prefab using Guid(80e5bbfa6aa12b34ca98423c9e7a0f86) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '464fd3ea48cbc7ac91f4aece496eb03b') in 0.0335975 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Materials/WallGrey.mat
+  artifactKey: Guid(9e8597a68e94e804d9874df594ebb10c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Materials/WallGrey.mat using Guid(9e8597a68e94e804d9874df594ebb10c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '17a06497aa1e264710f9e4e29bdc8f18') in 0.0507041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/VaseTallBottle.FBX
+  artifactKey: Guid(2adc15af28cd51043b6bc41751fb2503) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/VaseTallBottle.FBX using Guid(2adc15af28cd51043b6bc41751fb2503) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '669d11a2a211622964c48689fe8ff3f5') in 0.029309 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/BedSingle.FBX
+  artifactKey: Guid(143675af431aa314f83da80f5aff8dbe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/BedSingle.FBX using Guid(143675af431aa314f83da80f5aff8dbe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'acdf622ecfb8b42cc35481b2b685a861') in 0.0335081 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Floor/Floor2x4m.FBX
+  artifactKey: Guid(0be13f3b1daeb3c458ad48c714ccbd15) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Floor/Floor2x4m.FBX using Guid(0be13f3b1daeb3c458ad48c714ccbd15) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b2057238c5a88eb648bae12a0a5fe13d') in 0.0335718 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Textures
+  artifactKey: Guid(3d7b4331008677247b5e61eefeb554c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Textures using Guid(3d7b4331008677247b5e61eefeb554c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bb4d0d41ea214cd9a671afddb42e05b2') in 0.0178435 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Floor/Floor1m.FBX
+  artifactKey: Guid(771e4240123bb4e4e843968dfaf72fd5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Floor/Floor1m.FBX using Guid(771e4240123bb4e4e843968dfaf72fd5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '856e05faa327f7841c034a5c0a3f81cc') in 0.0289432 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Walls/WallWindow2m.FBX
+  artifactKey: Guid(33cfc142f7d1009429d61d0bc5be9fd1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Walls/WallWindow2m.FBX using Guid(33cfc142f7d1009429d61d0bc5be9fd1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e210d8b0dea3b8dd5b736791ff9262b7') in 0.0338008 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/BedDouble.FBX
+  artifactKey: Guid(5ef75ced93ed5884dbcf4403d8018e7b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/BedDouble.FBX using Guid(5ef75ced93ed5884dbcf4403d8018e7b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8a091fa0692b25bd475976e848bc3e23') in 0.0374421 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Textures/Floor_BeigeStripes.jpg
+  artifactKey: Guid(01e75fac537f199469b905e8b40bbc1d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Textures/Floor_BeigeStripes.jpg using Guid(01e75fac537f199469b905e8b40bbc1d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd8ff7739558918cee2c3b7d15f82efcc') in 0.0357618 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Walls/WallWindowBay4mCurtain.FBX
+  artifactKey: Guid(42d01a673d17e624995eb1892ca9f067) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Walls/WallWindowBay4mCurtain.FBX using Guid(42d01a673d17e624995eb1892ca9f067) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9693b36e36e61222d2cd8da367209026') in 0.0358001 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Walls/WallDoor2m.prefab
+  artifactKey: Guid(bfa974a01b4cbd94eb18f3e7956f9aca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Walls/WallDoor2m.prefab using Guid(bfa974a01b4cbd94eb18f3e7956f9aca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2fdf220a3f5a5bfb27991155afd67b51') in 0.0415727 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Walls/Door.FBX
+  artifactKey: Guid(eb1ea10424b1fd54a911d11e956ea492) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Walls/Door.FBX using Guid(eb1ea10424b1fd54a911d11e956ea492) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '77fa24f30c8e1159c0cc09ce24ac9939') in 0.0536551 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/PlantPotRoundMedium.FBX
+  artifactKey: Guid(2a621bc3f19c8774d8fc0497ebc0f764) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/PlantPotRoundMedium.FBX using Guid(2a621bc3f19c8774d8fc0497ebc0f764) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5a55227a9e684f30c998332c906f1575') in 0.0361145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Furniture/ShelvesTallA.prefab
+  artifactKey: Guid(582abf97ecb4a1d4c8e99e763a493630) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Furniture/ShelvesTallA.prefab using Guid(582abf97ecb4a1d4c8e99e763a493630) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8b92ad4607af652b401dbeac93ba1e51') in 0.0369965 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Materials/Cream.mat
+  artifactKey: Guid(3f6142e08336f4e46811b4f657bc9b94) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Materials/Cream.mat using Guid(3f6142e08336f4e46811b4f657bc9b94) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2190c0a865879b43444460949c56626e') in 0.0225597 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/TableSquareMedium.FBX
+  artifactKey: Guid(d3f160d95e8a45449a26475b358cb108) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/TableSquareMedium.FBX using Guid(d3f160d95e8a45449a26475b358cb108) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a15591cb64d006e0dc884d88faa5b75e') in 0.0292307 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Textures/StripesGreenBlue.jpg
+  artifactKey: Guid(c21504c1b0d9f1b4caef36918ccf938e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Textures/StripesGreenBlue.jpg using Guid(c21504c1b0d9f1b4caef36918ccf938e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2dbb00ad80e46739b7a290f542cd8148') in 0.0394155 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/TableRectangleShort.FBX
+  artifactKey: Guid(1fa13df843e49b6489209c4a6f08aee2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/TableRectangleShort.FBX using Guid(1fa13df843e49b6489209c4a6f08aee2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3ae460ba47754960f5af65933e91fdc0') in 0.0360909 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Walls/WallWindowBay4m.FBX
+  artifactKey: Guid(fb1818858455d0642ae5a531b2f94afd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Models/Walls/WallWindowBay4m.FBX using Guid(fb1818858455d0642ae5a531b2f94afd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '55bc0ea1e2f14831bf3a6d2785aee8be') in 0.0409439 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Furniture/SofaDouble.prefab
+  artifactKey: Guid(171822e55c6acbd4789dea1c302379f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Furniture/SofaDouble.prefab using Guid(171822e55c6acbd4789dea1c302379f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1236aa3276c6ed5d9b0111c2bc4f7050') in 0.0362299 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.368477 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03
+  artifactKey: Guid(197c578b8563e4739a4828d7a5a0021b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03 using Guid(197c578b8563e4739a4828d7a5a0021b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1e54f44e2f475be45185e9a403cce061') in 0.0174227 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeCabinet02.prefab
+  artifactKey: Guid(6efee525fdecf4cf3b59d6b733cc2609) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeCabinet02.prefab using Guid(6efee525fdecf4cf3b59d6b733cc2609) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '139ba85d701ff28c852c6ff441f64fab') in 0.0334489 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Scenes/Demo_FreeKitchen.unity
+  artifactKey: Guid(b82b3291a971d4ef89a55d6a2e676b7a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Scenes/Demo_FreeKitchen.unity using Guid(b82b3291a971d4ef89a55d6a2e676b7a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f5353bb9d15c478223a6fcc4a07ada5d') in 0.0255204 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Models/FreeExtractorHood.fbx
+  artifactKey: Guid(673d5702877994d0493b648ed35b6326) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Models/FreeExtractorHood.fbx using Guid(673d5702877994d0493b648ed35b6326) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3b1abe992a0ad8f6c4e87e14a2d0f8ea') in 0.0297284 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeToaster.prefab
+  artifactKey: Guid(3eff626206b794d0abf02d51967ec8e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeToaster.prefab using Guid(3eff626206b794d0abf02d51967ec8e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c2dbbe7209d5cde230b3500663a70fc0') in 0.0250964 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreePlate.prefab
+  artifactKey: Guid(ce79dbb34713241978debb72446fa860) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreePlate.prefab using Guid(ce79dbb34713241978debb72446fa860) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c265b27e6df1cd3b839013099be76b23') in 0.0260569 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Models/FreeLamp.fbx
+  artifactKey: Guid(dfa479f5f208b4bb4ae3ecf2345b1710) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Models/FreeLamp.fbx using Guid(dfa479f5f208b4bb4ae3ecf2345b1710) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a6cc3a2ed2a6c912a1fbe1a9f865bb1b') in 0.0374882 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeRoomMaterial_Normal.png
+  artifactKey: Guid(e2c5a5e4340294544b3f34e8a43b9105) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeRoomMaterial_Normal.png using Guid(e2c5a5e4340294544b3f34e8a43b9105) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '538f7f372638e99c10050fd555b963dd') in 0.0307514 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCabinet03.prefab
+  artifactKey: Guid(94e584b003b224cab88b8807f9fe052f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCabinet03.prefab using Guid(94e584b003b224cab88b8807f9fe052f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9dc8da13a6e119d3fe871af392fcb86b') in 0.0295324 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 27
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Models/FreeBowl02.fbx
+  artifactKey: Guid(63a684205bd934635bea35ff3f82fbbc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Models/FreeBowl02.fbx using Guid(63a684205bd934635bea35ff3f82fbbc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c07ea6d73cc784cbcc51e83627227d7b') in 0.0338795 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCabinet02_DrawerSmall.prefab
+  artifactKey: Guid(5d260932f991f4f21b954ee93ac7aa03) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCabinet02_DrawerSmall.prefab using Guid(5d260932f991f4f21b954ee93ac7aa03) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6c324f2f24b3822177c8c55dfbcef9c7') in 0.023713 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeLamp.prefab
+  artifactKey: Guid(b4bf0657188dd44ff878e2fb0dba8d20) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeLamp.prefab using Guid(b4bf0657188dd44ff878e2fb0dba8d20) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b5eea193adf21e98022d4849918be2e3') in 0.031198 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeCabinet01_Material_AO.png
+  artifactKey: Guid(731032e6279d24437b8f1072561bc835) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeCabinet01_Material_AO.png using Guid(731032e6279d24437b8f1072561bc835) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '59dc21165fa5b0b4d357755ea40ccc96') in 0.0247187 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeChair.prefab
+  artifactKey: Guid(fd97ab50fe8954dbdad1b63fe7179412) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeChair.prefab using Guid(fd97ab50fe8954dbdad1b63fe7179412) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b693667649cb189463421316488dc7fb') in 0.024171 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeSpatula02.prefab
+  artifactKey: Guid(c5d95c401ebb6498abb86c916d32dc5b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeSpatula02.prefab using Guid(c5d95c401ebb6498abb86c916d32dc5b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cef9a0d431f6fa0cebc383a825051e5e') in 0.0271972 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Models/FreeCabinet02_DrawerSmall.fbx
+  artifactKey: Guid(ac039d90cb5844685919504da1ddf727) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Models/FreeCabinet02_DrawerSmall.fbx using Guid(ac039d90cb5844685919504da1ddf727) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '15692cf9bd293aab980dc866550bc329') in 0.0290052 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Materials/Version03/FreeCabinet03_Material.mat
+  artifactKey: Guid(a6643aa8a4e444a6f820f9c34936bd59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Materials/Version03/FreeCabinet03_Material.mat using Guid(a6643aa8a4e444a6f820f9c34936bd59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3a3e2a7fbc86a273d2fc871e92cf4b4f') in 0.0404326 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeStoveMaterial_MetallicSmoothness.png
+  artifactKey: Guid(8321cd29fa36d4883b5811fa078766c3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeStoveMaterial_MetallicSmoothness.png using Guid(8321cd29fa36d4883b5811fa078766c3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd7f9de3dd7b6e113728eec0181d3f1a3') in 0.0260844 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version02
+  artifactKey: Guid(a5f4899051c384bc688beb2dcaddb2ff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version02 using Guid(a5f4899051c384bc688beb2dcaddb2ff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4fe2441ac42a4af1b78bdec070e95118') in 0.0177037 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Materials/Version01/FreeStoveMaterial.mat
+  artifactKey: Guid(6440467843e6c4620816451587b79027) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Materials/Version01/FreeStoveMaterial.mat using Guid(6440467843e6c4620816451587b79027) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '83d1cd441d4a1fca8b55512aad0a3a56') in 0.0200499 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Models/FreePepperShaker.fbx
+  artifactKey: Guid(e3af1426604bc4658ad1bf97b58573d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Models/FreePepperShaker.fbx using Guid(e3af1426604bc4658ad1bf97b58573d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e06d28737686333893ac44dc14d7f5d6') in 0.0252774 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/ShelfWithEquipment02.prefab
+  artifactKey: Guid(6617f31a484b648878d478db800ec3ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/ShelfWithEquipment02.prefab using Guid(6617f31a484b648878d478db800ec3ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '400864a873a3a60531444a4bfcecd85e') in 0.0207316 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 39
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeEquipment01Material_AO.png
+  artifactKey: Guid(321a8ef9f072c4393885e20494b36f98) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeEquipment01Material_AO.png using Guid(321a8ef9f072c4393885e20494b36f98) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e73265c48d4a910d0137dab7a54fd91f') in 0.0260776 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeEquipment02Material_MetallicSmoothness.png
+  artifactKey: Guid(ee49eae954d404aef930076a5eafb0fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeEquipment02Material_MetallicSmoothness.png using Guid(ee49eae954d404aef930076a5eafb0fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2c108754eb32db44b2b9076d3cec0126') in 0.0328201 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeStoveMaterial_MetallicSmoothness.png
+  artifactKey: Guid(3d6b42d9068564002a7ce836e3b35e29) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version02/FreeStoveMaterial_MetallicSmoothness.png using Guid(3d6b42d9068564002a7ce836e3b35e29) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e651cfaf9faed59458d1ee0da5f8d265') in 0.0288258 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02
+  artifactKey: Guid(7252025761b02475eadaf4a644e1696c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02 using Guid(7252025761b02475eadaf4a644e1696c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3883005972c7e787988c9778a21d8779') in 0.0168382 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeSpatula01.prefab
+  artifactKey: Guid(e20dcf65266bb432292b91dedd1a18a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeSpatula01.prefab using Guid(e20dcf65266bb432292b91dedd1a18a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'afc2a0fec3de93b5562a7e890eecde3c') in 0.027053 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeToaster.prefab
+  artifactKey: Guid(566155daf34764d3eb3f4170fef77f24) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeToaster.prefab using Guid(566155daf34764d3eb3f4170fef77f24) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a4a50c3493f028a5121ab833fb14830f') in 0.0253037 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeCoffeeMaker_ToasterMaterial_AlbedoTransparency.png
+  artifactKey: Guid(0a03aacbddaf447a0abfc63467ba7eb9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeCoffeeMaker_ToasterMaterial_AlbedoTransparency.png using Guid(0a03aacbddaf447a0abfc63467ba7eb9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '16d566abd13bd27dd0b2183db1e59a2c') in 0.0238347 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Materials/GroundMaterial.mat
+  artifactKey: Guid(7795727b08de5499297abd25be168839) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Materials/GroundMaterial.mat using Guid(7795727b08de5499297abd25be168839) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cbfde9cc3801a7b6f4881efb28b1f9c7') in 0.0199575 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Materials/Version01/FreeRoomMaterial.mat
+  artifactKey: Guid(7a2e60135d3a74f4a89b5224b4010f7a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Materials/Version01/FreeRoomMaterial.mat using Guid(7a2e60135d3a74f4a89b5224b4010f7a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a606f0b33c2453896a8e69c3f3165c6e') in 0.0209848 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Models/FreeCup.fbx
+  artifactKey: Guid(e4d59ee7dc3c14991819cb18722aa122) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Models/FreeCup.fbx using Guid(e4d59ee7dc3c14991819cb18722aa122) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '00d5a69cbd23cd26846f6919526d92b1') in 0.0326469 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/Cabinet02WithEquipment.prefab
+  artifactKey: Guid(c7967d1cea93a4ab18391a421dc86336) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/Cabinet02WithEquipment.prefab using Guid(c7967d1cea93a4ab18391a421dc86336) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '670f27a740cd3d1e0060216001f3e79a') in 0.0370222 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 121
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeCabinet01_Material_AO.png
+  artifactKey: Guid(396d0f2ccb0954c32bdd5c28c0db4e81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Textures/Version03/FreeCabinet01_Material_AO.png using Guid(396d0f2ccb0954c32bdd5c28c0db4e81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4e368829cf60b3c677532f0557a8e9e1') in 0.0278025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCabinet01.prefab
+  artifactKey: Guid(5b5aea8c3144544028063b38853a8c80) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCabinet01.prefab using Guid(5b5aea8c3144544028063b38853a8c80) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f9ee1d5f663d0d7c821ea01adaf0c84a') in 0.0290651 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCabinet01_DoorRight.prefab
+  artifactKey: Guid(fb99711c181754fd9b52ac203b135dd9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCabinet01_DoorRight.prefab using Guid(fb99711c181754fd9b52ac203b135dd9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5f8658470bb9661bc339ac3bbcaebfee') in 0.0377093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Models/FreeSpatula03.fbx
+  artifactKey: Guid(6d5a0e8dc92984c4e93c7a59dbc69297) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Models/FreeSpatula03.fbx using Guid(6d5a0e8dc92984c4e93c7a59dbc69297) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9622cfec1c7fd22188e9a555d80d3701') in 0.0291904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeCoffeeMaker.prefab
+  artifactKey: Guid(ba10e96e1442b4a489af249d3a66caff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeCoffeeMaker.prefab using Guid(ba10e96e1442b4a489af249d3a66caff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0fbc007359e5ae2f1084b8663a9fdf0e') in 0.0252877 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Models/FreeCabinet01.fbx
+  artifactKey: Guid(f97859fdcfc7346408fcea5b6ef47d18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Models/FreeCabinet01.fbx using Guid(f97859fdcfc7346408fcea5b6ef47d18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9e84c2f58c4f0d987bb67fb86a0dc4a2') in 0.0271693 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeCabinet01_DoorRight.prefab
+  artifactKey: Guid(c05978aee78c54b47bda1138481145be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeCabinet01_DoorRight.prefab using Guid(c05978aee78c54b47bda1138481145be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '015103574b56f583e96307e862c5b5e5') in 0.025103 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01
+  artifactKey: Guid(af1d1b374aa744429be494dff2df9497) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01 using Guid(af1d1b374aa744429be494dff2df9497) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b59ba4585e97c41fda7c35a77a4f16a3') in 0.0172489 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Materials/Version01/FreeRefrigeratorMaterial.mat
+  artifactKey: Guid(bc2a01896b0634202aa60a2121ae0a9b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Materials/Version01/FreeRefrigeratorMaterial.mat using Guid(bc2a01896b0634202aa60a2121ae0a9b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a2a7cdefc2b18fdacbcaffe234b1c7e5') in 0.0232099 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Materials/Version03/FreeCoffeeMaker_ToasterMaterial.mat
+  artifactKey: Guid(d80da336b7bb64ad98e8821f23321115) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Materials/Version03/FreeCoffeeMaker_ToasterMaterial.mat using Guid(d80da336b7bb64ad98e8821f23321115) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '892c39bbc724e56d7ba223e0b07dd817') in 0.0379687 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreePepperShaker.prefab
+  artifactKey: Guid(02570cdf1b8574e8e80ed319ae337872) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreePepperShaker.prefab using Guid(02570cdf1b8574e8e80ed319ae337872) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7ccb2fbe7acf67fc2e78f37dedb807c4') in 0.0333427 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeCabinet03_DrawerBig.prefab
+  artifactKey: Guid(c0adec9f6a2d84c79bff54e8417e3cf6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version02/FreeCabinet03_DrawerBig.prefab using Guid(c0adec9f6a2d84c79bff54e8417e3cf6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '84825996d381998ca6de98583509b2ed') in 0.0272075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeCup02.prefab
+  artifactKey: Guid(c58436ee2750b4eb6b809a7790aa8124) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version01/FreeCup02.prefab using Guid(c58436ee2750b4eb6b809a7790aa8124) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '29052074820641e2f33adea34abd1e8f') in 0.0307149 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.218 seconds
+Refreshing native plugins compatible for Editor in 1.67 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.234 seconds
+Domain Reload Profiling: 2452ms
+	BeginReloadAssembly (308ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (71ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (789ms)
+		LoadAssemblies (547ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (385ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (346ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1235ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (971ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (233ms)
+			ProcessInitializeOnLoadAttributes (539ms)
+			ProcessInitializeOnLoadMethodAttributes (180ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Refreshing native plugins compatible for Editor in 1.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 30 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6826 unused Assets / (7.9 MB). Loaded Objects now: 7682.
+Memory consumption went from 193.7 MB to 185.8 MB.
+Total: 19.576100 ms (FindLiveObjects: 1.117400 ms CreateObjectMapping: 2.196200 ms MarkObjects: 9.652700 ms  DeleteObjects: 6.607200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 129.081824 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Props
+  artifactKey: Guid(2361e409e66f7ee48aebfdbd0533f924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Props using Guid(2361e409e66f7ee48aebfdbd0533f924) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd88523c6d2d0f4f5b4cc237236f13640') in 0.0027182 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021712 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Props/Books.prefab
+  artifactKey: Guid(8062fd9b85c788e418915692eb5c78e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Props/Books.prefab using Guid(8062fd9b85c788e418915692eb5c78e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e49a192626646c644c8d1f50b66f58d') in 0.765685 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Props/PlantPotRoundMedium.prefab
+  artifactKey: Guid(4c00d4e527e5ce04dbbb4920cec10370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Props/PlantPotRoundMedium.prefab using Guid(4c00d4e527e5ce04dbbb4920cec10370) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b65403526c2d6fada06b9f306c060bd7') in 0.0509567 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Props/Switch.prefab
+  artifactKey: Guid(c0b8a552e87eba541a4496a99e7933c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Props/Switch.prefab using Guid(c0b8a552e87eba541a4496a99e7933c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'beab173056458cebd7460ba076308aec') in 0.053375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Props/VaseRoundBottom.prefab
+  artifactKey: Guid(05bcf3023cb735c43bca50eca3b1f6b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Props/VaseRoundBottom.prefab using Guid(05bcf3023cb735c43bca50eca3b1f6b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4d5060763f02bb3df2a53834ae3f2d60') in 0.0291993 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Props/VaseSmall.prefab
+  artifactKey: Guid(866bdbed2037c124c96163a0f79b27f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Andres/UnityTechnologies/Basic Asset Pack Interior/Prefabs/Props/VaseSmall.prefab using Guid(866bdbed2037c124c96163a0f79b27f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d8bd66debcc5caae2af75510f0464b5') in 0.0401209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.088605 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeBowl01.prefab
+  artifactKey: Guid(af2b0398b8d9140eb98924b1b6772b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeBowl01.prefab using Guid(af2b0398b8d9140eb98924b1b6772b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '464e0e3a496ce5b664867e5200ab1381') in 0.0395406 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeRoom_Version03.prefab
+  artifactKey: Guid(4324507d163af4f849523295e146c7bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeRoom_Version03.prefab using Guid(4324507d163af4f849523295e146c7bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d341cfafd5784f9e075ed171ef733cb') in 0.3515033 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1216
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeSaltShaker.prefab
+  artifactKey: Guid(7f496ac96f3ab4b058545abc0cfec9ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeSaltShaker.prefab using Guid(7f496ac96f3ab4b058545abc0cfec9ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '06ba82adcca0d0698689a25e268189ef') in 0.0415063 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCabinet03.prefab
+  artifactKey: Guid(94e584b003b224cab88b8807f9fe052f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCabinet03.prefab using Guid(94e584b003b224cab88b8807f9fe052f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15672739fd7274a48cf32f0dddd58a93') in 0.0514118 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 57
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCabinet03_DrawerBig.prefab
+  artifactKey: Guid(db2dc204cd5a442a9be3b4488af257be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCabinet03_DrawerBig.prefab using Guid(db2dc204cd5a442a9be3b4488af257be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e2dd5e99b944f41259e2c3cbdb5bb59') in 0.0370121 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCabinet01.prefab
+  artifactKey: Guid(5b5aea8c3144544028063b38853a8c80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/FreeCabinet01.prefab using Guid(5b5aea8c3144544028063b38853a8c80) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9743299d29689a82171d38303977b36c') in 0.0454478 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 51
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.135842 seconds.
+  path: Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/ShelfWithEquipment01.prefab
+  artifactKey: Guid(b1682c080b95e4d0cbad249d2c896d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Andres/Package04_Free_Kitchen/FreeKitchen/Prefabs/Version03/ShelfWithEquipment01.prefab using Guid(b1682c080b95e4d0cbad249d2c896d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b1aabc63420d7ebad284228c52ea77e') in 0.088064 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 196
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
