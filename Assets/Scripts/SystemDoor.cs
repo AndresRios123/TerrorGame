@@ -14,29 +14,46 @@ public class SystemDoor : MonoBehaviour
     public AudioClip openDoor;
     public AudioClip closeDoor;
 
+    [Header("Llave")]
+    public bool requiereLlave = false;
+    private bool abiertaConLlave = false;
+
+    [Header("Bloqueada")]
+    public AudioClip bloqueada;
+
     private Quaternion rotacionInicial;
     private Quaternion rotacionAbierta;
 
     void Start()
     {
         col = GetComponentInChildren<Collider>();
-
-        // 🔥 Guardar rotación inicial (la que tú pusiste en Unity)
         rotacionInicial = transform.localRotation;
-
-        // 🔥 Calcular rotación abierta basada en la inicial
         rotacionAbierta = rotacionInicial * Quaternion.Euler(0, doorOpenAngle, 0);
     }
 
-    public void ChangeDoorState()
+    public void ChangeDoorState(Selected player)
     {
+        if (requiereLlave)
+        {
+            if (!player.TenerYUsarLlave())
+            {
+                // 🔊 Sonido de puerta bloqueada
+                if (bloqueada != null)
+                    AudioSource.PlayClipAtPoint(bloqueada, transform.position, 1);
+
+                Debug.Log("Necesitas la llave");
+                return;
+            }
+
+            abiertaConLlave = true;
+        }
+
         doorOpen = true;
         timer = tiempoParaCerrar;
 
         if (col != null)
             col.enabled = false;
 
-        // 🔊 Sonido al abrir
         if (openDoor != null)
             AudioSource.PlayClipAtPoint(openDoor, transform.position, 1);
     }
@@ -49,18 +66,20 @@ public class SystemDoor : MonoBehaviour
         {
             targetRotation = rotacionAbierta;
 
-            timer -= Time.deltaTime;
-
-            if (timer <= 0f)
+            if (!abiertaConLlave)
             {
-                doorOpen = false;
+                timer -= Time.deltaTime;
 
-                if (col != null)
-                    col.enabled = true;
+                if (timer <= 0f)
+                {
+                    doorOpen = false;
 
-                // 🔊 Sonido al cerrar
-                if (closeDoor != null)
-                    AudioSource.PlayClipAtPoint(closeDoor, transform.position, 1);
+                    if (col != null)
+                        col.enabled = true;
+
+                    if (closeDoor != null)
+                        AudioSource.PlayClipAtPoint(closeDoor, transform.position, 1);
+                }
             }
         }
         else

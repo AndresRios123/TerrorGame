@@ -2,41 +2,143 @@ using UnityEngine;
 
 public class Selected : MonoBehaviour
 {
-    public float distancia = 3f;
+    public float distancia = 5f;
+
+    [Header("Agarre")]
+    public Transform holdPoint;
+    public float throwForce = 500f;
+
+    private GameObject objetoAgarrado;
+    private Rigidbody rbObjeto;
+    private Collider colObjeto;
+    private int layerOriginal;
+
+    public GameObject ObjetoAgarrado => objetoAgarrado;
 
     void Update()
     {
         RaycastHit hit;
+        LayerMask mask = ~LayerMask.GetMask("Player", "Agarrado");
 
-        // Ignorar la layer "Player"
-        LayerMask mask = ~LayerMask.GetMask("Player");
-
-        // Raycast hacia adelante
         if (Physics.Raycast(transform.position, transform.forward, out hit, distancia, mask))
         {
-            Debug.Log("Detectando: " + hit.collider.name);
+            Debug.Log("Detectando: " + hit.collider.name + " | tag: " + hit.collider.tag);
 
-            if (hit.collider.CompareTag("Door"))
+            // 🔑 LLAVE
+            if (hit.collider.CompareTag("Llave") && objetoAgarrado == null)
             {
-                Debug.Log("Es una puerta");
-
                 if (Input.GetKeyDown(KeyCode.E))
-                {
-                    Debug.Log("Presionaste E");
+                    AgarrarObjeto(hit.collider.gameObject);
+            }
 
-                    // Buscar el script incluso en el padre
-                    SystemDoor door = hit.collider.GetComponentInParent<SystemDoor>();
+            // 🟢 PICKABLE
+            if (hit.collider.CompareTag("Pickable") && objetoAgarrado == null)
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                    AgarrarObjeto(hit.collider.gameObject);
+            }
 
-                    if (door != null)
-                    {
-                        door.ChangeDoorState();
-                    }
-                    else
-                    {
-                        Debug.Log("No tiene SystemDoor");
-                    }
-                }
+            // 🔵 PUERTA
+            if (hit.collider.CompareTag("Door") && Input.GetKeyDown(KeyCode.E))
+            {
+                SystemDoor door = hit.collider.GetComponent<SystemDoor>();
+                if (door == null) door = hit.collider.GetComponentInParent<SystemDoor>();
+                if (door == null) door = hit.collider.GetComponentInChildren<SystemDoor>();
+                if (door != null) door.ChangeDoorState(this);
+            }
+
+            // 🟡 CAJÓN
+            if (hit.collider.CompareTag("Cajon") && Input.GetKeyDown(KeyCode.E))
+            {
+                SystemDrawer drawer = hit.collider.GetComponentInParent<SystemDrawer>();
+                if (drawer != null) drawer.ChangeDrawerState();
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Q) && objetoAgarrado != null)
+            SoltarObjeto();
+
+        if (Input.GetMouseButtonDown(0) && objetoAgarrado != null)
+            LanzarObjeto();
+    }
+
+    void LateUpdate()
+    {
+        if (objetoAgarrado == null) return;
+        objetoAgarrado.transform.position = holdPoint.position;
+        objetoAgarrado.transform.rotation = holdPoint.rotation;
+    }
+
+    void AgarrarObjeto(GameObject obj)
+    {
+        obj.transform.SetParent(null);
+
+        rbObjeto = obj.GetComponent<Rigidbody>();
+        colObjeto = obj.GetComponent<Collider>();
+
+        if (rbObjeto == null)
+        {
+            Debug.LogWarning("Sin Rigidbody: " + obj.name);
+            return;
+        }
+
+        objetoAgarrado = obj;
+        rbObjeto.isKinematic = true;
+        rbObjeto.useGravity = false;
+
+        if (colObjeto != null)
+            colObjeto.enabled = false;
+
+        // ✅ Cambia el layer para que el raycast lo ignore
+        layerOriginal = obj.layer;
+        obj.layer = LayerMask.NameToLayer("Agarrado");
+    }
+
+    void SoltarObjeto()
+    {
+        if (objetoAgarrado == null) return;
+
+        rbObjeto.isKinematic = false;
+        rbObjeto.useGravity = true;
+
+        if (colObjeto != null)
+            colObjeto.enabled = true;
+
+        // ✅ Restaura el layer original
+        objetoAgarrado.layer = layerOriginal;
+
+        objetoAgarrado = null;
+        rbObjeto = null;
+        colObjeto = null;
+    }
+
+    void LanzarObjeto()
+    {
+        rbObjeto.isKinematic = false;
+        rbObjeto.useGravity = true;
+        rbObjeto.AddForce(transform.forward * throwForce);
+
+        if (colObjeto != null)
+            colObjeto.enabled = true;
+
+        // ✅ Restaura el layer original
+        objetoAgarrado.layer = layerOriginal;
+
+        objetoAgarrado = null;
+        rbObjeto = null;
+        colObjeto = null;
+    }
+
+    public bool TenerYUsarLlave()
+    {
+        if (objetoAgarrado != null && objetoAgarrado.CompareTag("Llave"))
+        {
+            Destroy(objetoAgarrado);
+            objetoAgarrado = null;
+            rbObjeto = null;
+            colObjeto = null;
+            return true;
+        }
+        return false;
     }
 }

@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.11f1 (3000ef702840) revision 3145967'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Usuario" at "2026-04-22T02:48:37.4673096Z"
 OS: 'Windows 11  (10.0.26200) Professional' Language: 'es' Physical Memory: 15752 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Usuario" at "2026-04-05T16:57:11.5548161Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-04-05T16:57:11Z
+Date: 2026-04-22T02:48:37Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/Users/Usuario/TerrorGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62731
+53349
 -licensingIpc
 LicenseClient-Usuario
 -job-worker-count
@@ -67,12 +67,12 @@ C:/Users/Usuario/TerrorGame
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [10836]  Target information:
+Player connection [22204]  Target information:
 
-Player connection [10836]  * "[IP] 192.168.0.19 [Port] 0 [Flags] 2 [Guid] 3892138860 [EditorId] 3892138860 [Version] 1048832 [Id] WindowsEditor(7,602SN11631) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [22204]  * "[IP] 192.168.0.19 [Port] 0 [Flags] 2 [Guid] 3407807082 [EditorId] 3407807082 [Version] 1048832 [Id] WindowsEditor(7,602SN11631) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [10836] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [10836] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22204] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [22204] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -84,7 +84,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 3.52 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.11f1 (3000ef702840)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -100,12 +100,12 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56192
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002659 seconds.
-- Loaded All Assemblies, in  0.817 seconds
+Registered in 0.002170 seconds.
+- Loaded All Assemblies, in  0.545 seconds
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -113,35 +113,35 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.648 seconds
-Domain Reload Profiling: 1460ms
-	BeginReloadAssembly (298ms)
+- Finished resetting the current domain, in  0.582 seconds
+Domain Reload Profiling: 1125ms
+	BeginReloadAssembly (171ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (77ms)
-	RebuildNativeTypeToScriptingClass (37ms)
-	initialDomainReloadingComplete (85ms)
-	LoadAllAssembliesAndSetupDomain (314ms)
-		LoadAssemblies (295ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (239ms)
+		LoadAssemblies (167ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (306ms)
-			TypeCache.Refresh (304ms)
-				TypeCache.ScanAssembly (284ms)
+		AnalyzeDomain (235ms)
+			TypeCache.Refresh (231ms)
+				TypeCache.ScanAssembly (213ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (649ms)
+	FinalizeReload (583ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (574ms)
+		SetupLoadedEditorAssemblies (537ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (70ms)
+			InitializePlatformSupportModulesInManaged (69ms)
 			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (138ms)
-			ProcessInitializeOnLoadAttributes (229ms)
-			ProcessInitializeOnLoadMethodAttributes (131ms)
+			BeforeProcessingInitializeOnLoad (131ms)
+			ProcessInitializeOnLoadAttributes (208ms)
+			ProcessInitializeOnLoadMethodAttributes (122ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -156,17 +156,17 @@ Begin MonoManager ReloadAssembly
 	ResponseStatus: Unsupported protocol version '1.18.0'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Usuario"
 [Licensing::IpcConnector] LicenseClient-Usuario channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Usuario-6000.3.11" at "2026-04-05T16:57:14.8954504Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Usuario-6000.3.11" at "2026-04-22T02:48:40.4214773Z"
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.0+23225a6
-  Session Id:              be9a249d014e402f9054352de2d49b23
-  Correlation Id:          be96ad86f2844d08650a9d67f96dace9
-  External correlation Id: 3740691481505124140
+  Session Id:              faaf58db8e7b47f5b80892d881cc4640
+  Correlation Id:          239fdd99941121fbc1ec61257617688a
+  External correlation Id: 8833532313693214653
   Machine Id:              54h4dYrsuYdpihKd6oGvI+sRZnU=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Usuario-6000.3.11" (connect: 0.00s, validation: 0.01s, handshake: 0.14s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Usuario-6000.3.11-notifications" at "2026-04-05T16:57:15.0390039Z"
-[Licensing::Module] Licensing Background thread has ended after 3.48s
-[Licensing::Module] Licensing is initialized (took 0.72s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Usuario-6000.3.11" (connect: 0.00s, validation: 0.00s, handshake: 0.20s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Usuario-6000.3.11-notifications" at "2026-04-22T02:48:40.6278907Z"
+[Licensing::Module] Licensing Background thread has ended after 3.16s
+[Licensing::Module] Licensing is initialized (took 0.91s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 4674176816030-UnityPersXXXX
@@ -174,8 +174,8 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.842 seconds
-Refreshing native plugins compatible for Editor in 1.54 ms, found 3 plugins.
+- Loaded All Assemblies, in  2.061 seconds
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -188,218 +188,68 @@ Native extension for WindowsStandalone target not found
 [MODES] Loading mode Default (0) for mode-current-id-TerrorGame
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.098 seconds
-Domain Reload Profiling: 2934ms
-	BeginReloadAssembly (958ms)
+- Finished resetting the current domain, in  1.139 seconds
+Domain Reload Profiling: 3196ms
+	BeginReloadAssembly (1140ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (751ms)
-		LoadAssemblies (534ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (791ms)
+		LoadAssemblies (552ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (358ms)
-			TypeCache.Refresh (250ms)
-				TypeCache.ScanAssembly (229ms)
-			BuildScriptInfoCaches (89ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (1099ms)
+		AnalyzeDomain (375ms)
+			TypeCache.Refresh (258ms)
+				TypeCache.ScanAssembly (235ms)
+			BuildScriptInfoCaches (93ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1140ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (812ms)
+		SetupLoadedEditorAssemblies (828ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (223ms)
-			ProcessInitializeOnLoadAttributes (432ms)
-			ProcessInitializeOnLoadMethodAttributes (142ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (196ms)
+			ProcessInitializeOnLoadAttributes (480ms)
+			ProcessInitializeOnLoadMethodAttributes (140ms)
 			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 30 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6830 unused Assets / (7.8 MB). Loaded Objects now: 7664.
-Memory consumption went from 189.2 MB to 181.5 MB.
-Total: 15.674500 ms (FindLiveObjects: 1.254700 ms CreateObjectMapping: 1.562600 ms MarkObjects: 8.128700 ms  DeleteObjects: 4.726600 ms)
+Unloading 6832 unused Assets / (7.6 MB). Loaded Objects now: 7666.
+Memory consumption went from 158.8 MB to 151.2 MB.
+Total: 13.592900 ms (FindLiveObjects: 1.072700 ms CreateObjectMapping: 1.087800 ms MarkObjects: 7.218400 ms  DeleteObjects: 4.212800 ms)
 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.002 seconds
-Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.959 seconds
-Domain Reload Profiling: 1960ms
-	BeginReloadAssembly (270ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (67ms)
-	RebuildCommonClasses (56ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (621ms)
-		LoadAssemblies (498ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (250ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (223ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (959ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (747ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (167ms)
-			ProcessInitializeOnLoadAttributes (425ms)
-			ProcessInitializeOnLoadMethodAttributes (140ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (24ms)
-Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 30 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6826 unused Assets / (7.0 MB). Loaded Objects now: 7680.
-Memory consumption went from 194.1 MB to 187.1 MB.
-Total: 17.222700 ms (FindLiveObjects: 1.240000 ms CreateObjectMapping: 1.807300 ms MarkObjects: 8.585200 ms  DeleteObjects: 5.588200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 3933.528865 seconds.
-  path: Assets/Low Poly Bathroom Essentials Pack demo
-  artifactKey: Guid(b427ebf18c3724d4bbef6428517999be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Bathroom Essentials Pack demo using Guid(b427ebf18c3724d4bbef6428517999be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8baed37623b2113e23bb9df801131171') in 0.0068064 seconds
+  Time since last request: 13471.287818 seconds.
+  path: Assets/_Recovery
+  artifactKey: Guid(9ef93ccf2fafb93409009b59c5727081) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Recovery using Guid(9ef93ccf2fafb93409009b59c5727081) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '95bdae8a1161950be19c564099b757fb') in 0.0696269 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_Recovery/0.unity
+  artifactKey: Guid(ce4f5a7942c7ee6438d8864aeb9fa262) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Recovery/0.unity using Guid(ce4f5a7942c7ee6438d8864aeb9fa262) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '600d264bc8c237aef0ad5f7d383845c3') in 0.0553518 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 575.312905 seconds.
+  path: Assets/Scripts/EnemyMoveToPoint.cs
+  artifactKey: Guid(df059236c8380bd4f97eeb9f71d67cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/EnemyMoveToPoint.cs using Guid(df059236c8380bd4f97eeb9f71d67cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a617d7d711aa8b9e60611cde3bafcf1b') in 0.0008239 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
-========================================================================
-Received Import Request.
-  Time since last request: 27.165187 seconds.
-  path: Assets/Low Poly Bathroom Essentials Pack demo/BUILT
-  artifactKey: Guid(29ab7b7093bf57f4ca37995ba66fa75a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Bathroom Essentials Pack demo/BUILT using Guid(29ab7b7093bf57f4ca37995ba66fa75a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43bbe66d0eb20fa3c764bc66dc573c80') in 0.0008263 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.960946 seconds.
-  path: Assets/Low Poly Bathroom Essentials Pack demo/DemoScene
-  artifactKey: Guid(5816248d2684eed4f94c3902fdccc2f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Bathroom Essentials Pack demo/DemoScene using Guid(5816248d2684eed4f94c3902fdccc2f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f6d21622888db160b0ecd65afa98129a') in 0.0007345 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.954192 seconds.
-  path: Assets/Low Poly Bathroom Essentials Pack demo/DemoScene/Low Poly Bathroom Essentials Pack
-  artifactKey: Guid(9dda898b75795244ba8bd3aac2c25824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Bathroom Essentials Pack demo/DemoScene/Low Poly Bathroom Essentials Pack using Guid(9dda898b75795244ba8bd3aac2c25824) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5fb248fb1d49ed15b17987a3034fa1c') in 0.0007025 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.015627 seconds.
-  path: Assets/Low Poly Bathroom Essentials Pack demo/DemoScene/Low Poly Bathroom Essentials Pack/Low Poly Bathroom Essentials Pack volume 1.asset
-  artifactKey: Guid(bef68fecb99bf6e4e9e3b74b6df129a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Bathroom Essentials Pack demo/DemoScene/Low Poly Bathroom Essentials Pack/Low Poly Bathroom Essentials Pack volume 1.asset using Guid(bef68fecb99bf6e4e9e3b74b6df129a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd95c98bead3aad460a88f4f009f6fed5') in 0.0200786 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.687036 seconds.
-  path: Assets/Low Poly Bathroom Essentials Pack demo/Materials
-  artifactKey: Guid(62edb22e466ba4f448bdc9e422ced260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Bathroom Essentials Pack demo/Materials using Guid(62edb22e466ba4f448bdc9e422ced260) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70eae493790af8c9eb20ab7132d0d3db') in 0.0006811 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002718 seconds.
-  path: Assets/Low Poly Bathroom Essentials Pack demo/Materials/BathroomEssentialsPack.mat
-  artifactKey: Guid(b6ee193d30ed5b64f987b534de0a56ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Bathroom Essentials Pack demo/Materials/BathroomEssentialsPack.mat using Guid(b6ee193d30ed5b64f987b534de0a56ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '82daa6fbc42923255f622ac65f16e51b') in 0.5229024 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.042819 seconds.
-  path: Assets/Low Poly Bathroom Essentials Pack demo/Meshes
-  artifactKey: Guid(c134eadab269f9a4b89d0258c3b2f158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Bathroom Essentials Pack demo/Meshes using Guid(c134eadab269f9a4b89d0258c3b2f158) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '580b0fb67d07b23efdcd12c5d3db30d1') in 0.0006696 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Low Poly Bathroom Essentials Pack demo/Meshes/Cozy_Bathroom_Bathtub_Standalone.fbx
-  artifactKey: Guid(18f348a78d0a8a846b5f785e335f4fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Bathroom Essentials Pack demo/Meshes/Cozy_Bathroom_Bathtub_Standalone.fbx using Guid(18f348a78d0a8a846b5f785e335f4fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '56c288f9e6463fcb464229d7823f9087') in 0.0729365 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000092 seconds.
-  path: Assets/Low Poly Bathroom Essentials Pack demo/Meshes/Cozy_Bathroom_Faucet_BathWall_Set.fbx
-  artifactKey: Guid(2330a09645340d444887a054ca63bc70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Bathroom Essentials Pack demo/Meshes/Cozy_Bathroom_Faucet_BathWall_Set.fbx using Guid(2330a09645340d444887a054ca63bc70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cec767fa5c577c5ca9125f392c6e050c') in 0.0363761 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Low Poly Bathroom Essentials Pack demo/Meshes/Cozy_Bathroom_Sink_Vessel.fbx
-  artifactKey: Guid(7903250ce201d8a4d8d815115e170ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Bathroom Essentials Pack demo/Meshes/Cozy_Bathroom_Sink_Vessel.fbx using Guid(7903250ce201d8a4d8d815115e170ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e6b9f0be058001130ac9eec6316b8e0') in 0.0329661 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Low Poly Bathroom Essentials Pack demo/Meshes/Cozy_Bathroom_Vanity.fbx
-  artifactKey: Guid(1683f28230d945449b4622caec8c53f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Bathroom Essentials Pack demo/Meshes/Cozy_Bathroom_Vanity.fbx using Guid(1683f28230d945449b4622caec8c53f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '977b5e5c0b8875ce7ec9429a9baed3de') in 0.0528209 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Low Poly Bathroom Essentials Pack demo/Meshes/Cozy_Bathroom_Toilet.fbx
-  artifactKey: Guid(8a37d340c272f444abb6da0be225705b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Bathroom Essentials Pack demo/Meshes/Cozy_Bathroom_Toilet.fbx using Guid(8a37d340c272f444abb6da0be225705b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9cc565ac6d0ca6850d12d87dfb54b04e') in 0.0727977 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Low Poly Bathroom Essentials Pack demo/Meshes/Cozy_Bathroom_Faucet.fbx
-  artifactKey: Guid(8c75db6b7676c46448ed27c412c7d8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Bathroom Essentials Pack demo/Meshes/Cozy_Bathroom_Faucet.fbx using Guid(8c75db6b7676c46448ed27c412c7d8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f6ba8e03eb29497681669688e45ec99e') in 0.0548101 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
