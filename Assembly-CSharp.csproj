@@ -51,9 +51,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\SystemDrawer.cs" />
     <Compile Include="Assets\Scripts\SystemDoor.cs" />
-    <Compile Include="Assets\Scripts\EnemyVision.cs" />
-    <Compile Include="Assets\Scripts\EnemyMoveToPoint.cs" />
+    <Compile Include="Assets\Scripts\EnemyFOVVisualizer.cs" />
     <Compile Include="Assets\Scripts\Inventario.cs" />
+    <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\WakeUpAnimation.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Selected.cs" />
