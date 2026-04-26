@@ -22,23 +22,14 @@ public class Selected : MonoBehaviour
 
         if (Physics.Raycast(transform.position, transform.forward, out hit, distancia, mask))
         {
-            Debug.Log("Detectando: " + hit.collider.name + " | tag: " + hit.collider.tag);
-
-            // 🔑 LLAVE
             if (hit.collider.CompareTag("Llave") && objetoAgarrado == null)
-            {
                 if (Input.GetKeyDown(KeyCode.E))
                     AgarrarObjeto(hit.collider.gameObject);
-            }
 
-            // 🟢 PICKABLE
             if (hit.collider.CompareTag("Pickable") && objetoAgarrado == null)
-            {
                 if (Input.GetKeyDown(KeyCode.E))
                     AgarrarObjeto(hit.collider.gameObject);
-            }
 
-            // 🔵 PUERTA
             if (hit.collider.CompareTag("Door") && Input.GetKeyDown(KeyCode.E))
             {
                 SystemDoor door = hit.collider.GetComponent<SystemDoor>();
@@ -47,7 +38,6 @@ public class Selected : MonoBehaviour
                 if (door != null) door.ChangeDoorState(this);
             }
 
-            // 🟡 CAJÓN
             if (hit.collider.CompareTag("Cajon") && Input.GetKeyDown(KeyCode.E))
             {
                 SystemDrawer drawer = hit.collider.GetComponentInParent<SystemDrawer>();
@@ -60,6 +50,13 @@ public class Selected : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && objetoAgarrado != null)
             LanzarObjeto();
+
+        // Activa la linterna si está siendo agarrada
+        if (objetoAgarrado != null)
+        {
+            Flashlight fl = objetoAgarrado.GetComponent<Flashlight>();
+            if (fl != null) fl.SetHeld(true);
+        }
     }
 
     void LateUpdate()
@@ -72,7 +69,6 @@ public class Selected : MonoBehaviour
     void AgarrarObjeto(GameObject obj)
     {
         obj.transform.SetParent(null);
-
         rbObjeto = obj.GetComponent<Rigidbody>();
         colObjeto = obj.GetComponent<Collider>();
 
@@ -89,7 +85,6 @@ public class Selected : MonoBehaviour
         if (colObjeto != null)
             colObjeto.enabled = false;
 
-        // ✅ Cambia el layer para que el raycast lo ignore
         layerOriginal = obj.layer;
         obj.layer = LayerMask.NameToLayer("Agarrado");
     }
@@ -98,15 +93,17 @@ public class Selected : MonoBehaviour
     {
         if (objetoAgarrado == null) return;
 
+        // Apaga la linterna al soltar
+        Flashlight fl = objetoAgarrado.GetComponent<Flashlight>();
+        if (fl != null) fl.SetHeld(false);
+
         rbObjeto.isKinematic = false;
         rbObjeto.useGravity = true;
 
         if (colObjeto != null)
             colObjeto.enabled = true;
 
-        // ✅ Restaura el layer original
         objetoAgarrado.layer = layerOriginal;
-
         objetoAgarrado = null;
         rbObjeto = null;
         colObjeto = null;
@@ -114,6 +111,10 @@ public class Selected : MonoBehaviour
 
     void LanzarObjeto()
     {
+        // Apaga la linterna al lanzar
+        Flashlight fl = objetoAgarrado.GetComponent<Flashlight>();
+        if (fl != null) fl.SetHeld(false);
+
         rbObjeto.isKinematic = false;
         rbObjeto.useGravity = true;
         rbObjeto.AddForce(transform.forward * throwForce);
@@ -121,9 +122,7 @@ public class Selected : MonoBehaviour
         if (colObjeto != null)
             colObjeto.enabled = true;
 
-        // ✅ Restaura el layer original
         objetoAgarrado.layer = layerOriginal;
-
         objetoAgarrado = null;
         rbObjeto = null;
         colObjeto = null;

@@ -54,6 +54,7 @@
     <Compile Include="Assets\Scripts\SystemDoor.cs" />
     <Compile Include="Assets\Scripts\EnemyFOVVisualizer.cs" />
     <Compile Include="Assets\Scripts\Inventario.cs" />
+    <Compile Include="Assets\Scripts\Flashinglight.cs" />
     <Compile Include="Assets\Scripts\EnemyActivator.cs" />
     <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\WakeUpAnimation.cs" />
