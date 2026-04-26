@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\SystemDrawer.cs" />
     <Compile Include="Assets\Scripts\GameOverManager.cs" />
+    <Compile Include="Assets\Scripts\Inventory\InventoryItem.cs" />
     <Compile Include="Assets\Scripts\SystemDoor.cs" />
     <Compile Include="Assets\Scripts\EnemyFOVVisualizer.cs" />
     <Compile Include="Assets\Scripts\Inventario.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Assets\Scripts\WakeUpAnimation.cs" />
     <Compile Include="Assets\Scripts\GameOverCamera.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Inventory\InventorySystem.cs" />
     <Compile Include="Assets\Scripts\Selected.cs" />
   </ItemGroup>
   <ItemGroup>
