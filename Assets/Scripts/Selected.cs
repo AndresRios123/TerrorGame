@@ -51,27 +51,6 @@ public class Selected : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && objetoAgarrado != null)
             LanzarObjeto();
 
-        // Guardar objeto agarrado en el inventario con G
-        if (Input.GetKeyDown(KeyCode.G) && objetoAgarrado != null)
-        {
-            Debug.Log("G presionada | objeto: " + objetoAgarrado.name);
-
-            InventoryItem invItem = objetoAgarrado.GetComponent<InventoryItem>();
-            Debug.Log("InventoryItem: " + (invItem != null) + " | InventorySystem.Instance: " + (InventorySystem.Instance != null));
-
-            if (invItem != null && InventorySystem.Instance != null)
-            {
-                bool agregado = InventorySystem.Instance.AddItem(objetoAgarrado);
-                Debug.Log("Resultado AddItem: " + agregado);
-                if (agregado)
-                {
-                    objetoAgarrado = null;
-                    rbObjeto = null;
-                    colObjeto = null;
-                }
-            }
-        }
-
         // Activa la linterna si está siendo agarrada
         if (objetoAgarrado != null)
         {
@@ -90,15 +69,28 @@ public class Selected : MonoBehaviour
     void AgarrarObjeto(GameObject obj)
     {
         obj.transform.SetParent(null);
-        rbObjeto = obj.GetComponent<Rigidbody>();
-        colObjeto = obj.GetComponent<Collider>();
+        Rigidbody rb = obj.GetComponent<Rigidbody>();
+        Collider col = obj.GetComponent<Collider>();
 
-        if (rbObjeto == null)
+        if (rb == null)
         {
             Debug.LogWarning("Sin Rigidbody: " + obj.name);
             return;
         }
 
+        // Si tiene InventoryItem va directo al inventario
+        InventoryItem invItem = obj.GetComponent<InventoryItem>();
+        if (invItem != null && InventorySystem.Instance != null)
+        {
+            bool agregado = InventorySystem.Instance.AddItem(obj);
+            if (!agregado)
+                Debug.Log("Inventario lleno");
+            return;
+        }
+
+        // Si no tiene InventoryItem se agarra físicamente
+        rbObjeto = rb;
+        colObjeto = col;
         objetoAgarrado = obj;
         rbObjeto.isKinematic = true;
         rbObjeto.useGravity = false;
@@ -110,6 +102,28 @@ public class Selected : MonoBehaviour
         obj.layer = LayerMask.NameToLayer("Agarrado");
     }
 
+    public void LimpiarMano()
+    {
+        if (objetoAgarrado == null) return;
+
+        Flashlight fl = objetoAgarrado.GetComponent<Flashlight>();
+        if (fl != null) fl.SetHeld(false);
+
+        if (rbObjeto != null)
+        {
+            rbObjeto.isKinematic = true;
+            rbObjeto.useGravity = false;
+        }
+
+        if (colObjeto != null)
+            colObjeto.enabled = false;
+
+        objetoAgarrado.layer = 0;
+        objetoAgarrado = null;
+        rbObjeto = null;
+        colObjeto = null;
+    }
+
     public void SoltarAlInventario()
     {
         if (objetoAgarrado == null) return;
@@ -117,8 +131,11 @@ public class Selected : MonoBehaviour
         Flashlight fl = objetoAgarrado.GetComponent<Flashlight>();
         if (fl != null) fl.SetHeld(false);
 
-        rbObjeto.isKinematic = true;
-        rbObjeto.useGravity = false;
+        if (rbObjeto != null)
+        {
+            rbObjeto.isKinematic = true;
+            rbObjeto.useGravity = false;
+        }
 
         if (colObjeto != null)
             colObjeto.enabled = false;
@@ -203,26 +220,4 @@ public class Selected : MonoBehaviour
         }
         return false;
     }
-
-    public void LimpiarMano()
-{
-    if (objetoAgarrado == null) return;
-
-    Flashlight fl = objetoAgarrado.GetComponent<Flashlight>();
-    if (fl != null) fl.SetHeld(false);
-
-    if (rbObjeto != null)
-    {
-        rbObjeto.isKinematic = true;
-        rbObjeto.useGravity = false;
-    }
-
-    if (colObjeto != null)
-        colObjeto.enabled = false;
-
-    objetoAgarrado.layer = 0;
-    objetoAgarrado = null;
-    rbObjeto = null;
-    colObjeto = null;
-}
 }
