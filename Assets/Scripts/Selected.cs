@@ -30,6 +30,18 @@ public class Selected : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                     AgarrarObjeto(hit.collider.gameObject);
 
+            // Objetos con InventoryItem se recogen siempre
+            if (hit.collider.CompareTag("Pickable") && Input.GetKeyDown(KeyCode.E))
+            {
+                InventoryItem invItem = hit.collider.GetComponent<InventoryItem>();
+                if (invItem != null && InventorySystem.Instance != null)
+                {
+                    bool agregado = InventorySystem.Instance.AddItem(hit.collider.gameObject);
+                    if (!agregado)
+                        Debug.Log("Inventario lleno");
+                }
+            }
+
             if (hit.collider.CompareTag("Door") && Input.GetKeyDown(KeyCode.E))
             {
                 SystemDoor door = hit.collider.GetComponent<SystemDoor>();
@@ -68,29 +80,20 @@ public class Selected : MonoBehaviour
 
     void AgarrarObjeto(GameObject obj)
     {
-        obj.transform.SetParent(null);
-        Rigidbody rb = obj.GetComponent<Rigidbody>();
-        Collider col = obj.GetComponent<Collider>();
+        // Si tiene InventoryItem no lo agarres físicamente
+        InventoryItem invItem = obj.GetComponent<InventoryItem>();
+        if (invItem != null) return;
 
-        if (rb == null)
+        obj.transform.SetParent(null);
+        rbObjeto = obj.GetComponent<Rigidbody>();
+        colObjeto = obj.GetComponent<Collider>();
+
+        if (rbObjeto == null)
         {
             Debug.LogWarning("Sin Rigidbody: " + obj.name);
             return;
         }
 
-        // Si tiene InventoryItem va directo al inventario
-        InventoryItem invItem = obj.GetComponent<InventoryItem>();
-        if (invItem != null && InventorySystem.Instance != null)
-        {
-            bool agregado = InventorySystem.Instance.AddItem(obj);
-            if (!agregado)
-                Debug.Log("Inventario lleno");
-            return;
-        }
-
-        // Si no tiene InventoryItem se agarra físicamente
-        rbObjeto = rb;
-        colObjeto = col;
         objetoAgarrado = obj;
         rbObjeto.isKinematic = true;
         rbObjeto.useGravity = false;

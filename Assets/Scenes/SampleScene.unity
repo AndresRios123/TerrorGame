@@ -2365,7 +2365,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af5c16659ff4d07409c499cd520b8fe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inventario
-  iconoLlave: {fileID: 0}
 --- !u!1001 &52086131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44584,7 +44583,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1159316468}
-  - component: {fileID: 1159316467}
   - component: {fileID: 1159316466}
   m_Layer: 0
   m_Name: InventoryManager
@@ -44616,29 +44614,6 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   selectedSlot: 0
   playerSelected: {fileID: 330585548}
---- !u!114 &1159316467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1159316465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 738d07002a995124cb9eef1a87135d60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InventorySystem
-  slots:
-  - {fileID: 1415819987}
-  - {fileID: 1601107100}
-  - {fileID: 1683904436}
-  - {fileID: 651931551}
-  emptySlotSprite: {fileID: 0}
-  emptyColor: {r: 1, g: 1, b: 1, a: 0.3}
-  filledColor: {r: 1, g: 1, b: 1, a: 1}
-  selectedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  selectedSlot: 0
-  playerSelected: {fileID: 0}
 --- !u!4 &1159316468
 Transform:
   m_ObjectHideFlags: 0
