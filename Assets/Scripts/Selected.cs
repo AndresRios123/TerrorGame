@@ -54,10 +54,15 @@ public class Selected : MonoBehaviour
         // Guardar objeto agarrado en el inventario con G
         if (Input.GetKeyDown(KeyCode.G) && objetoAgarrado != null)
         {
+            Debug.Log("G presionada | objeto: " + objetoAgarrado.name);
+
             InventoryItem invItem = objetoAgarrado.GetComponent<InventoryItem>();
+            Debug.Log("InventoryItem: " + (invItem != null) + " | InventorySystem.Instance: " + (InventorySystem.Instance != null));
+
             if (invItem != null && InventorySystem.Instance != null)
             {
                 bool agregado = InventorySystem.Instance.AddItem(objetoAgarrado);
+                Debug.Log("Resultado AddItem: " + agregado);
                 if (agregado)
                 {
                     objetoAgarrado = null;
@@ -198,4 +203,26 @@ public class Selected : MonoBehaviour
         }
         return false;
     }
+
+    public void LimpiarMano()
+{
+    if (objetoAgarrado == null) return;
+
+    Flashlight fl = objetoAgarrado.GetComponent<Flashlight>();
+    if (fl != null) fl.SetHeld(false);
+
+    if (rbObjeto != null)
+    {
+        rbObjeto.isKinematic = true;
+        rbObjeto.useGravity = false;
+    }
+
+    if (colObjeto != null)
+        colObjeto.enabled = false;
+
+    objetoAgarrado.layer = 0;
+    objetoAgarrado = null;
+    rbObjeto = null;
+    colObjeto = null;
+}
 }

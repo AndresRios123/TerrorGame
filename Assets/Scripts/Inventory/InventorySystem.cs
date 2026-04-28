@@ -23,6 +23,11 @@ public class InventorySystem : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
         Instance = this;
     }
 
@@ -33,55 +38,93 @@ public class InventorySystem : MonoBehaviour
 
     private void Update()
     {
-        // Debug — presiona T para ver el estado del array
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            for (int i = 0; i < 4; i++)
-                Debug.Log($"Slot {i}: {(items[i] != null ? items[i].name : "vacío")}");
-        }
-
         float scroll = Input.GetAxis("Mouse ScrollWheel");
         if (scroll > 0f)
         {
             selectedSlot--;
             if (selectedSlot < 0) selectedSlot = 3;
-            RefreshUI();
+            EquiparSlotSeleccionado();
         }
         else if (scroll < 0f)
         {
             selectedSlot++;
             if (selectedSlot > 3) selectedSlot = 0;
-            RefreshUI();
+            EquiparSlotSeleccionado();
         }
 
-        if (Input.GetKeyDown(KeyCode.R) && playerSelected != null)
+        // Guardar con G sigue funcionando
+        if (Input.GetKeyDown(KeyCode.G) && playerSelected != null)
         {
-            Debug.Log($"R presionada | selectedSlot: {selectedSlot} | item en slot: {(items[selectedSlot] != null ? items[selectedSlot].name : "vacío")} | ObjetoAgarrado: {(playerSelected.ObjetoAgarrado != null ? playerSelected.ObjetoAgarrado.name : "ninguno")}");
-
-            if (playerSelected.ObjetoAgarrado == null && items[selectedSlot] != null)
-                EquiparSlotSeleccionado();
+            if (playerSelected.ObjetoAgarrado != null)
+            {
+                InventoryItem invItem = playerSelected.ObjetoAgarrado.GetComponent<InventoryItem>();
+                if (invItem != null)
+                {
+                    AddItem(playerSelected.ObjetoAgarrado);
+                    playerSelected.LimpiarMano();
+                }
+            }
         }
     }
 
     private void EquiparSlotSeleccionado()
     {
         if (playerSelected == null) return;
-        if (items[selectedSlot] == null) return;
 
-        GameObject item = items[selectedSlot];
-        items[selectedSlot] = null;
+        // Guarda el objeto de la mano si tiene uno
+        if (playerSelected.ObjetoAgarrado != null)
+        {
+            GameObject actual = playerSelected.ObjetoAgarrado;
+            playerSelected.LimpiarMano();
+            GuardarSinSeleccionar(actual);
+        }
 
-        // Recalcula currentSlots
-        currentSlots = 0;
-        for (int i = 0; i < 4; i++)
-            if (items[i] != null) currentSlots = i + 1;
+        // Equipa el objeto del slot seleccionado
+        if (items[selectedSlot] != null)
+        {
+            GameObject item = items[selectedSlot];
+            items[selectedSlot] = null;
 
-        // Activa y equipa
-        item.layer = LayerMask.NameToLayer("Agarrado");
-        item.SetActive(true);
-        playerSelected.AgarrarDesdeInventario(item);
+            currentSlots = 0;
+            for (int i = 0; i < 4; i++)
+                if (items[i] != null) currentSlots = i + 1;
+
+            item.transform.position = playerSelected.transform.position;
+            item.layer = LayerMask.NameToLayer("Agarrado");
+            playerSelected.AgarrarDesdeInventario(item);
+        }
 
         RefreshUI();
+    }
+
+    private void GuardarSinSeleccionar(GameObject item)
+    {
+        if (currentSlots >= 4) return;
+
+        item.layer = 0;
+        item.transform.position = new Vector3(0, -1000f, 0);
+
+        Rigidbody rb = item.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.isKinematic = true;
+            rb.useGravity = false;
+        }
+
+        Collider col = item.GetComponent<Collider>();
+        if (col != null)
+            col.enabled = false;
+
+        // Busca el primer slot vacío que no sea el seleccionado
+        for (int i = 0; i < 4; i++)
+        {
+            if (items[i] == null && i != selectedSlot)
+            {
+                items[i] = item;
+                if (i >= currentSlots) currentSlots = i + 1;
+                return;
+            }
+        }
     }
 
     public bool AddItem(GameObject item)
@@ -92,9 +135,19 @@ public class InventorySystem : MonoBehaviour
             return false;
         }
 
-        // Restaura el layer a Default antes de guardar
         item.layer = 0;
-        item.SetActive(false);
+        item.transform.position = new Vector3(0, -1000f, 0);
+
+        Rigidbody rb = item.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.isKinematic = true;
+            rb.useGravity = false;
+        }
+
+        Collider col = item.GetComponent<Collider>();
+        if (col != null)
+            col.enabled = false;
 
         items[currentSlots] = item;
         currentSlots++;
