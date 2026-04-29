@@ -22,26 +22,58 @@ public class Selected : MonoBehaviour
 
         if (Physics.Raycast(transform.position, transform.forward, out hit, distancia, mask))
         {
-            if (hit.collider.CompareTag("Llave") && objetoAgarrado == null)
-                if (Input.GetKeyDown(KeyCode.E))
-                    AgarrarObjeto(hit.collider.gameObject);
-
-            if (hit.collider.CompareTag("Pickable") && objetoAgarrado == null)
-                if (Input.GetKeyDown(KeyCode.E))
-                    AgarrarObjeto(hit.collider.gameObject);
-
-            if (hit.collider.CompareTag("Door") && Input.GetKeyDown(KeyCode.E))
+            Debug.Log("Detectando: " + hit.collider.name + " | tag: " + hit.collider.tag);
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                SystemDoor door = hit.collider.GetComponent<SystemDoor>();
-                if (door == null) door = hit.collider.GetComponentInParent<SystemDoor>();
-                if (door == null) door = hit.collider.GetComponentInChildren<SystemDoor>();
-                if (door != null) door.ChangeDoorState(this);
-            }
+                // LLAVE — siempre se agarra físicamente
+                if (hit.collider.CompareTag("Llave") && objetoAgarrado == null)
+                {
+                    AgarrarObjeto(hit.collider.gameObject);
+                }
 
-            if (hit.collider.CompareTag("Cajon") && Input.GetKeyDown(KeyCode.E))
-            {
-                SystemDrawer drawer = hit.collider.GetComponentInParent<SystemDrawer>();
-                if (drawer != null) drawer.ChangeDrawerState();
+                // PICKABLE — si tiene InventoryItem va al inventario, si no se agarra físicamente
+                else if (hit.collider.CompareTag("Pickable") && objetoAgarrado == null)
+                {
+                    InventoryItem invItem = hit.collider.GetComponent<InventoryItem>();
+                    if (invItem != null && InventorySystem.Instance != null)
+                    {
+                        bool agregado = InventorySystem.Instance.AddItem(hit.collider.gameObject);
+                        if (!agregado)
+                            Debug.Log("Inventario lleno");
+                    }
+                    else
+                    {
+                        AgarrarObjeto(hit.collider.gameObject);
+                    }
+                }
+
+                // PICKABLE con inventario aunque tengas algo en la mano
+                else if (hit.collider.CompareTag("Pickable") && objetoAgarrado != null)
+                {
+                    InventoryItem invItem = hit.collider.GetComponent<InventoryItem>();
+                    if (invItem != null && InventorySystem.Instance != null)
+                    {
+                        bool agregado = InventorySystem.Instance.AddItem(hit.collider.gameObject);
+                        if (!agregado)
+                            Debug.Log("Inventario lleno");
+                    }
+                }
+
+                // PUERTA
+                else if (hit.collider.CompareTag("Door"))
+                {
+                    SystemDoor door = hit.collider.GetComponent<SystemDoor>();
+                    if (door == null) door = hit.collider.GetComponentInParent<SystemDoor>();
+                    if (door == null) door = hit.collider.GetComponentInChildren<SystemDoor>();
+                    if (door != null) door.ChangeDoorState(this);
+                }
+
+                // CAJÓN
+                else if (hit.collider.CompareTag("Cajon"))
+                {
+                    SystemDrawer drawer = hit.collider.GetComponentInParent<SystemDrawer>();
+                    if (drawer != null) drawer.ChangeDrawerState();
+                }
             }
         }
 
@@ -69,28 +101,15 @@ public class Selected : MonoBehaviour
     void AgarrarObjeto(GameObject obj)
     {
         obj.transform.SetParent(null);
-        Rigidbody rb = obj.GetComponent<Rigidbody>();
-        Collider col = obj.GetComponent<Collider>();
+        rbObjeto = obj.GetComponent<Rigidbody>();
+        colObjeto = obj.GetComponent<Collider>();
 
-        if (rb == null)
+        if (rbObjeto == null)
         {
             Debug.LogWarning("Sin Rigidbody: " + obj.name);
             return;
         }
 
-        // Si tiene InventoryItem va directo al inventario
-        InventoryItem invItem = obj.GetComponent<InventoryItem>();
-        if (invItem != null && InventorySystem.Instance != null)
-        {
-            bool agregado = InventorySystem.Instance.AddItem(obj);
-            if (!agregado)
-                Debug.Log("Inventario lleno");
-            return;
-        }
-
-        // Si no tiene InventoryItem se agarra físicamente
-        rbObjeto = rb;
-        colObjeto = col;
         objetoAgarrado = obj;
         rbObjeto.isKinematic = true;
         rbObjeto.useGravity = false;

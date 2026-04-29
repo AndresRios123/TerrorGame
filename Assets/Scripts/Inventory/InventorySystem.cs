@@ -51,20 +51,6 @@ public class InventorySystem : MonoBehaviour
             if (selectedSlot > 3) selectedSlot = 0;
             EquiparSlotSeleccionado();
         }
-
-        // Guardar con G sigue funcionando
-        if (Input.GetKeyDown(KeyCode.G) && playerSelected != null)
-        {
-            if (playerSelected.ObjetoAgarrado != null)
-            {
-                InventoryItem invItem = playerSelected.ObjetoAgarrado.GetComponent<InventoryItem>();
-                if (invItem != null)
-                {
-                    AddItem(playerSelected.ObjetoAgarrado);
-                    playerSelected.LimpiarMano();
-                }
-            }
-        }
     }
 
     private void EquiparSlotSeleccionado()
@@ -76,7 +62,7 @@ public class InventorySystem : MonoBehaviour
         {
             GameObject actual = playerSelected.ObjetoAgarrado;
             playerSelected.LimpiarMano();
-            GuardarSinSeleccionar(actual);
+            GuardarEnSlotLibre(actual);
         }
 
         // Equipa el objeto del slot seleccionado
@@ -97,29 +83,26 @@ public class InventorySystem : MonoBehaviour
         RefreshUI();
     }
 
-    private void GuardarSinSeleccionar(GameObject item)
+    private void GuardarEnSlotLibre(GameObject item)
     {
-        if (currentSlots >= 4) return;
-
-        item.layer = 0;
-        item.transform.position = new Vector3(0, -1000f, 0);
-
-        Rigidbody rb = item.GetComponent<Rigidbody>();
-        if (rb != null)
-        {
-            rb.isKinematic = true;
-            rb.useGravity = false;
-        }
-
-        Collider col = item.GetComponent<Collider>();
-        if (col != null)
-            col.enabled = false;
-
-        // Busca el primer slot vacío que no sea el seleccionado
         for (int i = 0; i < 4; i++)
         {
             if (items[i] == null && i != selectedSlot)
             {
+                item.layer = 0;
+                item.transform.position = new Vector3(0, -1000f, 0);
+
+                Rigidbody rb = item.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    rb.isKinematic = true;
+                    rb.useGravity = false;
+                }
+
+                Collider col = item.GetComponent<Collider>();
+                if (col != null)
+                    col.enabled = false;
+
                 items[i] = item;
                 if (i >= currentSlots) currentSlots = i + 1;
                 return;
@@ -152,7 +135,12 @@ public class InventorySystem : MonoBehaviour
         items[currentSlots] = item;
         currentSlots++;
 
-        RefreshUI();
+        // Si el slot seleccionado es donde se guardó, equípalo en la mano
+        if (items[selectedSlot] != null && playerSelected.ObjetoAgarrado == null)
+            EquiparSlotSeleccionado();
+        else
+            RefreshUI();
+
         return true;
     }
 
