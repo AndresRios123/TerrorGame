@@ -51,13 +51,23 @@ public class InventorySystem : MonoBehaviour
             if (selectedSlot > 3) selectedSlot = 0;
             EquiparSlotSeleccionado();
         }
+
+        // Usar item del inventario con R
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            if (items[selectedSlot] != null)
+            {
+                BatteryPickup battery = items[selectedSlot].GetComponent<BatteryPickup>();
+                if (battery != null)
+                    battery.UsarBateria();
+            }
+        }
     }
 
     private void EquiparSlotSeleccionado()
     {
         if (playerSelected == null) return;
 
-        // Guarda el objeto de la mano si tiene uno
         if (playerSelected.ObjetoAgarrado != null)
         {
             GameObject actual = playerSelected.ObjetoAgarrado;
@@ -65,9 +75,16 @@ public class InventorySystem : MonoBehaviour
             GuardarEnSlotLibre(actual);
         }
 
-        // Equipa el objeto del slot seleccionado
+        // No equipar si es una batería
         if (items[selectedSlot] != null)
         {
+            BatteryPickup battery = items[selectedSlot].GetComponent<BatteryPickup>();
+            if (battery != null)
+            {
+                RefreshUI();
+                return;
+            }
+
             GameObject item = items[selectedSlot];
             items[selectedSlot] = null;
 
@@ -135,8 +152,9 @@ public class InventorySystem : MonoBehaviour
         items[currentSlots] = item;
         currentSlots++;
 
-        // Si el slot seleccionado es donde se guardó, equípalo en la mano
-        if (items[selectedSlot] != null && playerSelected.ObjetoAgarrado == null)
+        // Las baterías nunca se equipan en la mano
+        BatteryPickup battery = item.GetComponent<BatteryPickup>();
+        if (battery == null && items[selectedSlot] != null && playerSelected.ObjetoAgarrado == null)
             EquiparSlotSeleccionado();
         else
             RefreshUI();
