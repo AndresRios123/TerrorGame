@@ -30,7 +30,8 @@ public class Flashlight : MonoBehaviour
     {
         currentBattery = maxBattery;
         spotLight.enabled = false;
-        UpdateUI();
+        // UpdateUI();
+        if (batterySlider != null) batterySlider.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -67,9 +68,16 @@ public class Flashlight : MonoBehaviour
     public void SetHeld(bool held)
     {
         isHeld = held;
-        if (!held) TurnOff();
+        if (!held) 
+        {
+            TurnOff();
+            if (batterySlider != null) batterySlider.gameObject.SetActive(false);
+        }
+        else
+        {
+            if (batterySlider != null) batterySlider.gameObject.SetActive(true);
+        }
     }
-
     private void TurnOn()
     {
         isOn = true;
