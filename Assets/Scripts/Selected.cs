@@ -26,9 +26,10 @@ public class Selected : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 // LLAVE — siempre se agarra físicamente
-                if (hit.collider.CompareTag("Llave") && objetoAgarrado == null)
+                if (hit.collider.CompareTag("Llave"))
                 {
-                    AgarrarObjeto(hit.collider.gameObject);
+                    if (InventorySystem.Instance != null)
+                        InventorySystem.Instance.AddItem(hit.collider.gameObject);
                 }
 
                 // PICKABLE — si tiene InventoryItem va al inventario, si no se agarra físicamente
