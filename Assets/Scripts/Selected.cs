@@ -78,11 +78,18 @@ public class Selected : MonoBehaviour
             }
         }
 
+        // TECLA Q: Lanza el objeto agarrado con fuerza
         if (Input.GetKeyDown(KeyCode.Q) && objetoAgarrado != null)
-            SoltarObjeto();
-
-        if (Input.GetMouseButtonDown(0) && objetoAgarrado != null)
             LanzarObjeto();
+
+        // CLICK IZQUIERDO: Activa la mecanica especial del objeto agarrado (ej. linterna)
+        if (Input.GetMouseButtonDown(0) && objetoAgarrado != null)
+        {
+            Flashlight fl = objetoAgarrado.GetComponent<Flashlight>();
+            if (fl != null)
+                fl.Toggle();
+            // TODO: Aqui se pueden agregar mas objetos con mecanica de click izquierdo
+        }
 
         // Activa la linterna si está siendo agarrada
         if (objetoAgarrado != null)
