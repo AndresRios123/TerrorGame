@@ -26,9 +26,10 @@ public class Selected : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 // LLAVE — siempre se agarra físicamente
-                if (hit.collider.CompareTag("Llave") && objetoAgarrado == null)
+                if (hit.collider.CompareTag("Llave"))
                 {
-                    AgarrarObjeto(hit.collider.gameObject);
+                    if (InventorySystem.Instance != null)
+                        InventorySystem.Instance.AddItem(hit.collider.gameObject);
                 }
 
                 // PICKABLE — si tiene InventoryItem va al inventario, si no se agarra físicamente
@@ -74,14 +75,28 @@ public class Selected : MonoBehaviour
                     SystemDrawer drawer = hit.collider.GetComponentInParent<SystemDrawer>();
                     if (drawer != null) drawer.ChangeDrawerState();
                 }
+
+                // NOTA
+                else if (hit.collider.CompareTag("Nota"))
+                {
+                    ReadableNote note = hit.collider.GetComponent<ReadableNote>();
+                    if (note != null) note.Read();
+                }
             }
         }
 
+        // TECLA Q: Lanza el objeto agarrado con fuerza
         if (Input.GetKeyDown(KeyCode.Q) && objetoAgarrado != null)
-            SoltarObjeto();
-
-        if (Input.GetMouseButtonDown(0) && objetoAgarrado != null)
             LanzarObjeto();
+
+        // CLICK IZQUIERDO: Activa la mecanica especial del objeto agarrado (ej. linterna)
+        if (Input.GetMouseButtonDown(0) && objetoAgarrado != null)
+        {
+            Flashlight fl = objetoAgarrado.GetComponent<Flashlight>();
+            if (fl != null)
+                fl.Toggle();
+            // TODO: Aqui se pueden agregar mas objetos con mecanica de click izquierdo
+        }
 
         // Activa la linterna si está siendo agarrada
         if (objetoAgarrado != null)

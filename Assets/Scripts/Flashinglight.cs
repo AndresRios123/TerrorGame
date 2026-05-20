@@ -5,7 +5,6 @@ public class Flashlight : MonoBehaviour
 {
     [Header("Linterna")]
     public Light spotLight;
-    public KeyCode toggleKey = KeyCode.F;
 
     [Header("Batería")]
     public float maxBattery = 100f;
@@ -30,7 +29,8 @@ public class Flashlight : MonoBehaviour
     {
         currentBattery = maxBattery;
         spotLight.enabled = false;
-        UpdateUI();
+        // UpdateUI();
+        if (batterySlider != null) batterySlider.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -39,14 +39,6 @@ public class Flashlight : MonoBehaviour
         {
             if (isOn) TurnOff();
             return;
-        }
-
-        if (Input.GetKeyDown(toggleKey))
-        {
-            if (!isOn && currentBattery > 0f)
-                TurnOn();
-            else
-                TurnOff();
         }
 
         if (isOn && currentBattery > 0f)
@@ -67,9 +59,16 @@ public class Flashlight : MonoBehaviour
     public void SetHeld(bool held)
     {
         isHeld = held;
-        if (!held) TurnOff();
+        if (!held) 
+        {
+            TurnOff();
+            if (batterySlider != null) batterySlider.gameObject.SetActive(false);
+        }
+        else
+        {
+            if (batterySlider != null) batterySlider.gameObject.SetActive(true);
+        }
     }
-
     private void TurnOn()
     {
         isOn = true;
@@ -106,5 +105,16 @@ public class Flashlight : MonoBehaviour
 
         if (batteryFill != null)
             batteryFill.color = Color.Lerp(lowColor, fullColor, currentBattery / maxBattery);
+    }
+
+    // Metodo publico para que Selected.cs prenda/apague la linterna con click izquierdo
+    public void Toggle()
+    {
+        if (!isHeld) return;
+
+        if (!isOn && currentBattery > 0f)
+            TurnOn();
+        else
+            TurnOff();
     }
 }
