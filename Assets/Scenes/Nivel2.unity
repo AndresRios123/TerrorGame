@@ -51647,8 +51647,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b07089961c8df6e4fb342d790cac633e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneTransitionTrigger
-  sceneToLoad: Nivel3
-  requireKeyPress: 1
+  sceneToLoad: Nivel4
+  requireKeyPress: 0
   keyPrompt: Presiona E para continuar
 --- !u!4 &1208953483
 Transform:
@@ -51680,7 +51680,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

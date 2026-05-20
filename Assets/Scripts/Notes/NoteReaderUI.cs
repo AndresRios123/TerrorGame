@@ -12,7 +12,7 @@ public class NoteReaderUI : MonoBehaviour
     public TextMeshProUGUI closePromptText;
 
     private PlayerMovement playerMovement;
-    private bool isReading = false;
+    public bool IsReading { get; private set; } = false;
 
     void Awake()
     {
@@ -34,7 +34,7 @@ public class NoteReaderUI : MonoBehaviour
 
     void Update()
     {
-        if (!isReading) return;
+        if (!IsReading) return;
 
         if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Escape))
         {
@@ -60,7 +60,7 @@ public class NoteReaderUI : MonoBehaviour
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        isReading = true;
+        IsReading = true;
 
         if (playerMovement != null)
             playerMovement.enabled = false;
@@ -74,7 +74,7 @@ public class NoteReaderUI : MonoBehaviour
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        isReading = false;
+        IsReading = false;
 
         if (playerMovement != null)
             playerMovement.enabled = true;
