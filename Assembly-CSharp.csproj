@@ -55,6 +55,7 @@
     <Compile Include="Assets\Scripts\Inventory\InventoryItem.cs" />
     <Compile Include="Assets\Scripts\SystemDoor.cs" />
     <Compile Include="Assets\Scripts\EnemyFOVVisualizer.cs" />
+    <Compile Include="Assets\Scripts\Notes\ReadableNote.cs" />
     <Compile Include="Assets\Scripts\BatteryPickup.cs" />
     <Compile Include="Assets\Scripts\Flashinglight.cs" />
     <Compile Include="Assets\Scripts\EnemyActivator.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="Assets\Scripts\GameOverCamera.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventorySystem.cs" />
+    <Compile Include="Assets\Scripts\Notes\NoteReaderUI.cs" />
     <Compile Include="Assets\Scripts\PostProcessing\PostProcessController.cs" />
     <Compile Include="Assets\Scripts\Selected.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />

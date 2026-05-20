@@ -35,6 +35,9 @@ public class InteractionPrompt : MonoBehaviour
                 case "Cajon":
                     mensaje = "Presiona E para abrir/cerrar";
                     break;
+                case "Nota":
+                    mensaje = "Presiona E para leer";
+                    break;
                 default:
                     mensaje = "";
                     break;

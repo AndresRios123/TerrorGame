@@ -75,6 +75,13 @@ public class Selected : MonoBehaviour
                     SystemDrawer drawer = hit.collider.GetComponentInParent<SystemDrawer>();
                     if (drawer != null) drawer.ChangeDrawerState();
                 }
+
+                // NOTA
+                else if (hit.collider.CompareTag("Nota"))
+                {
+                    ReadableNote note = hit.collider.GetComponent<ReadableNote>();
+                    if (note != null) note.Read();
+                }
             }
         }
 
