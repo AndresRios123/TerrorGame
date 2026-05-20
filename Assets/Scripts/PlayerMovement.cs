@@ -42,8 +42,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (!animacionActiva)
-            Look();
+        if (animacionActiva)
+            return;
+
+        Look();
         Move();
         HandleCrouch();
     }
