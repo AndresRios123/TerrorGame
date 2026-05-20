@@ -5,6 +5,7 @@ public class Menu : MonoBehaviour
 {
     public void Jugar()
     {
+        SceneManager.LoadScene("MenuNiveles");
         if (SceneLoader.Instance != null)
             SceneLoader.Instance.LoadScene("SampleScene");
         else
