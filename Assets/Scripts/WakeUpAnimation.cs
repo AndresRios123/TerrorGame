@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class WakeUpAnimation : MonoBehaviour
@@ -24,6 +25,22 @@ public class WakeUpAnimation : MonoBehaviour
     void Awake()
     {
         playerMovement = GetComponent<PlayerMovement>();
+
+        // Solo ejecutar la animación en el primer nivel (SampleScene)
+        if (SceneManager.GetActiveScene().name != "SampleScene")
+        {
+            playerMovement.animacionActiva = false;
+
+            if (panelArriba != null)
+                panelArriba.gameObject.SetActive(false);
+
+            if (panelAbajo != null)
+                panelAbajo.gameObject.SetActive(false);
+
+            Destroy(this);
+            return;
+        }
+
         playerMovement.animacionActiva = true;
 
         alturaPanel = Screen.height / 2f;
